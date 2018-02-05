@@ -1,0 +1,151 @@
+@import '../../utils/styles/all';
+
+.dala-hero {
+  background: $color-scampipurple-shade1 url("./images/headerBG1440.jpg") center center no-repeat;
+  position: relative;
+  z-index: 0;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.dala-hero:after {
+  @include setAbsolute($cover: true);
+
+  content: "";
+  display: block;
+  z-index: -1;
+  background: rgba($color-scampipurple-shade1, 0.7);
+}
+
+.hero-cover {
+  @include setFixed($cover: true);
+
+  z-index: 999;
+  background: $color-scampipurple-shade1;
+  opacity: 1;
+}
+
+.hero-content {
+  @include setAbsolute($bottom: gridbase-multiplier(4), $left: 0, $right: 0);
+
+  z-index: 1000;
+  color: white;
+  text-align: center;
+
+  h1 {
+    @include headline;
+    opacity: 0;
+
+    @media screen and (max-width: 767px) {
+      font-size: 23px;
+      line-height: 37px;
+      padding-bottom: 9px;
+    }
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 29px;
+    font-family: 'proxima_nova_semibold', sans-serif;
+    padding-bottom: 10px;
+    margin-bottom: gridbase-multiplier(2);
+    opacity: 0;
+
+    @media screen and (max-width: 767px) {
+      font-size: $typography-typescale-size-base;
+      line-height: $typography-typescale-size-base-lineheight;
+      margin-bottom: 0;
+      padding-bottom: 12px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    @include setAbsolute($bottom: 8px, $left: 16px, $right: 16px);
+  }
+}
+
+.learn-more {
+  opacity: 0;
+
+  span {
+    @include small-display-text;
+
+    display: block;
+    color: $color-walateal-tint4;
+  }
+}
+
+.dala-cube-animation-wrapper {
+  @include setAbsolute($top: 50%, $left: 50%, $center: true);
+  @include transition(margin-top, 0.2s, ease-in-out);
+
+  z-index: 1001;
+
+  #DalaCubeAnimation {
+    width: 373.4px;
+    height: 325px;
+
+    .cls-1,.cls-9{opacity:0.7;}
+    .cls-1{fill:url(#linear-gradient);}
+    .cls-2{fill:none;stroke:#908cc0;stroke-linecap:round;stroke-miterlimit:10;}
+    .cls-3,.cls-9{fill:#1dc4bd;}
+    .cls-4{fill:#908cc0;}
+    .cls-5{fill:#5d598d;}
+    .cls-6{fill:#746fb0;}
+    .cls-7{fill:#25969b;}
+    .cls-8{fill:#4ad0ca;}
+    .cls-10{fill:#fff;}
+
+    #tinyCubes, #gradientCube, #purpleCube, #centerCube {
+      opacity: 0;
+    }
+    #dalaLogo {
+      transform: translateY(100px);
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 238.98px;
+        height: 208px;
+    }
+  }
+
+  @media screen and (max-height: 1024px) {
+    margin-top: -100px;
+  }
+
+  @media screen and (max-height: 640px) {
+    margin-top: -120px;
+  }
+}
+
+.dala-wordmark-wrapper {
+  padding-bottom: 4px;
+  margin-bottom: 13px;
+
+  #DalaWordmark {
+    width: 182.17px;
+    height: 65px;
+
+    @media screen and (max-width: 767px) {
+      width: 145.74px;
+      height: 52px;
+    }
+  }
+
+  #wordmarkFills .cls-1 {
+    fill: transparent;
+    stroke: $color-scampipurple-shade1;
+    stroke-width: 2;
+  }
+  #wordmarkStrokes .cls-1 {
+    opacity: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 8px;
+    padding-bottom: 3px;
+  }
+}

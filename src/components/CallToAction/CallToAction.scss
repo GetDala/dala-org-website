@@ -1,0 +1,26 @@
+@import '../../utils/styles/all';
+
+.call-to-action-btn {
+  @include small-display-text;
+  @include transition(all, 0.2s, ease-out);
+
+  background: $color-walateal-base;
+  line-height: gridbase-multiplier(3);
+  display: inline-block;
+  padding: 0 gridbase-multiplier(1);
+  color: white;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-box-shadow: $layout-elevation-2;
+  -moz-box-shadow: $layout-elevation-2;
+  box-shadow: $layout-elevation-2;
+}
+
+.call-to-action-btn:hover {
+  background: $color-walateal-shade1;
+  color: $color-walateal-tint4;
+}
+

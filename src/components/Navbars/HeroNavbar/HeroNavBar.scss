@@ -1,0 +1,93 @@
+@import '../../../utils/styles/all';
+
+.hero-navbar {
+  border-bottom: 1px solid $color-scampipurple-tint2;
+  margin: 0 36px;
+
+  .hero-navbar-brand-link {
+    padding-top: gridbase-multiplier(1);
+    position: relative;
+    perspective: 1000px;
+  }
+
+  .hero-navbar-brand-link img.brand-logo {
+    @include transition(all, 0.2s, ease-out);
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+
+  .brand-logomark {
+    @include setAbsolute($top: gridbase-multiplier(2), $left: gridbase-multiplier(4));
+    @include transition(opacity, 0.2s, ease-out);
+
+    opacity: 0;
+    height: 26px;
+  }
+
+  .hero-navbar-brand-link:hover img.brand-logo {
+    @include transform(rotateY(360deg));
+  }
+
+  .hero-navbar-brand-link:hover img.brand-logomark {
+    opacity: 1;
+  }
+
+  .hero-navbar-right-link {
+    @include caption-one;
+    @include transition(all, 0.2s, ease-in-out);
+
+    color: white;
+    text-transform: uppercase;
+    line-height: 69px;
+    padding: 4px gridbase-multiplier(1) 0 gridbase-multiplier(1);
+    margin: 0;
+    border-bottom: 4px solid transparent;
+
+    @media screen and (min-width: 960px) {
+        margin: 0 4px;
+    }
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+  }
+
+  .hero-navbar-right-link:hover {
+    background: transparent;
+    border-bottom: 4px solid $color-scampipurple-tint4;
+  }
+
+  .navbar-cta {
+    align-self: self-start;
+    margin-top: 19px;
+    margin-left: 4px;
+  }
+
+  .navbar-end {
+    @media screen and (min-width: 1px) {
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      margin-left: auto;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width: 1px) {
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -ms-flexbox;
+      display: flex;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0 16px;
+  }
+}
