@@ -1,7 +1,13 @@
 @import '../../utils/styles/all';
 
 #RewardsEngine {
-  padding-bottom: gridbase-multiplier(3);
+  padding-bottom: gridbase-multiplier(4);
+  margin-right: 54px;
+  margin-left: 54px;
+
+  .section-header {
+    padding-bottom: gridbase-multiplier(2);
+  }
 
   .section-content {
     .columns {
@@ -24,6 +30,8 @@
     .float-on-desktop {
       p {
         color: white;
+        margin-left: 18px;
+        margin-right: 18px;
       }
 
       @media screen and (min-width: $desktop){
@@ -36,14 +44,27 @@
         p {
           max-width: 434px;
           margin-left: 36px;
+          margin-right: 0;
         }
       }
     }
   }
+
+  .rewards-engine-content {
+    @media screen and (max-width: $desktop){
+      padding-top: 36px;
+    }
+  }
+  @media screen and (min-width: $desktop){
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 #RewardsEngineGraphic {
-  width: 100%;
+  max-width: 100%;
+  margin-left: 36px;
+  margin-right: 36px;
 
   .cls-1 {
     isolation: isolate;
@@ -89,5 +110,10 @@
   }
   .cls-16 {
     mix-blend-mode: multiply;
+  }
+
+  @media screen and (min-width: $desktop){
+    width: 100%;
+    margin: 0;
   }
 }

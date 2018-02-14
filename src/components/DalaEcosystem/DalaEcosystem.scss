@@ -1,7 +1,11 @@
 @import '../../utils/styles/all';
 
 #DalaEcosystem {
-  padding-bottom: gridbase-multiplier(3);
+  padding-bottom: gridbase-multiplier(4);
+
+  .section-header {
+    padding-bottom: gridbase-multiplier(1);
+  }
 
   .add-elevation {
     @include border-radius;

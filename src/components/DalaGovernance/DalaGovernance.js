@@ -26,7 +26,7 @@ class DalaGovernance extends Component {
         <div className="container">
           <div className="section-content">
             <div className="columns is-desktop">
-              <div className="column is-half-desktop governance-content">
+              <div className="column is-half-desktop governance-content is-flex-desktop">
                 <p>
                   The Dala Corporation administers and maintains the Dala token technology. The Corporation makes decisions on the future governance of Dala, as it evolves into a fully-decentralized organization, by monitoring the market for best-in-class solutions. With a long-term goal of maximizing the value of the Dala ecosystem, the Dala corporation is focused on key growth drivers, the size, and utility of the network to end-users.
                 </p>
@@ -35,7 +35,7 @@ class DalaGovernance extends Component {
                 </p>
               </div>
               <div className="column is-half-desktop governance-image">
-                <div className="compass-wrapper">
+                <div className="compass-wrapper has-text-centered">
                   <img alt="" src={Compass} />
                 </div>
               </div>

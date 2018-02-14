@@ -26,42 +26,42 @@ class ProductTimeline extends Component {
         <div className="container">
           <div className="section-content">
             <div className="columns is-desktop">
-              <div className="column is-7-desktop">
+              <div className="column is-half-desktop phone-flex is-flex-desktop">
+                <div className="phone-wrapper">
+                  <img src={PhonePlaceholder} alt="" />
+                </div>
+              </div>
+              <div className="column is-half-desktop">
                 <ul className="timeline">
                   <li className="is-clearfix is-flex-desktop">
-                    <div className="timeline-content">Wala annouces the issuance of a crypto-token that enables zero-fee and instantaneous micro transactions for the masses.</div>
                     <div className="timeline-date add-dash">
                       <img src={DalaTokenBlank} alt="" />
                       <span>OCT<br />2017</span>
                     </div>
+                    <div className="timeline-content"><span>Wala annouces the issuance of a crypto-token that enables zero-fee and instantaneous micro transactions for the masses.</span></div>
                   </li>
                   <li className="is-clearfix is-flex-desktop">
-                    <div className="timeline-content">Dala Token sale successfully closes and Wala begins integration.</div>
                     <div className="timeline-date add-dash">
                       <img src={DalaTokenBlank} alt="" />
                       <span>DEC<br />2017</span>
                     </div>
+                    <div className="timeline-content"><span>Dala Token sale successfully closes and Wala begins integration.</span></div>
                   </li>
                   <li className="is-clearfix is-flex-desktop">
-                    <div className="timeline-content">Launch Dala wallet with functionality to ear, redeeem, and transact with Dala.<br />Expand the Dala ecosystem through enterprise partnerships.</div>
                     <div className="timeline-date add-dash">
                       <span>Q1<br />2018</span>
                       <img src={DalaTokenBlank} alt="" />
                     </div>
+                    <div className="timeline-content"><span>Launch Dala wallet with functionality to earn, redeeem, and transact with Dala.<br /><br />Expand the Dala ecosystem through enterprise partnerships.</span></div>
                   </li>
                   <li className="is-clearfix is-flex-desktop">
-                    <div className="timeline-content">Release Dala Enterprise rewards engine.</div>
                     <div className="timeline-date">
                       <span>Q2<br />2018</span>
                       <img src={DalaTokenBlank} alt="" />
                     </div>
+                    <div className="timeline-content"><span>Release Dala Enterprise rewards engine.</span></div>
                   </li>
                 </ul>
-              </div>
-              <div className="column is-5-desktop">
-                <div className="phone-wrapper">
-                  <img src={PhonePlaceholder} alt="" />
-                </div>
               </div>
             </div>
           </div>

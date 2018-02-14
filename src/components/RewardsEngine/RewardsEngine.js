@@ -26,7 +26,7 @@ class RewardsEngine extends Component {
         <div className="container">
           <div className="section-content">
             <div className="columns is-desktop">
-              <div className="column float-on-desktop">
+              <div className="column float-on-desktop rewards-engine-content">
                 <p>
                   To enable a robust Dala ecosystem, the Dala Corporation will incentivize users and ecosystem partners through a rewards model. The Dala token rewards model has been proven, supports the acquisition of billions of consumers globally and drives adoption of merchants, SMEs, and enterprises.
                 </p>

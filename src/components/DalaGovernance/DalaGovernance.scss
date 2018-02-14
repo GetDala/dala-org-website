@@ -1,7 +1,13 @@
 @import '../../utils/styles/all';
 
 #DalaGovernance {
-  padding-bottom: gridbase-multiplier(3);
+  padding-bottom: gridbase-multiplier(4);
+  margin-right: 54px;
+  margin-left: 54px;
+
+  .section-header {
+    padding-bottom: gridbase-multiplier(2);
+  }
 
   .section-content {
     .columns {
@@ -12,6 +18,14 @@
 
       .governance-content {
         background: $color-walateal-shade1;
+        padding-top: 36px;
+
+        @media screen and (min-width: $desktop) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 0;
+        }
       }
       .governance-image {
         background: $color-walateal-shade2;
@@ -20,7 +34,19 @@
 
     p {
       color: white;
-      max-width: 434px;
+      margin-right: 18px;
+      margin-left: 18px;
+
+      @media screen and (min-width: $desktop) {
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 434px;
+      }
     }
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 0;
+    margin-left: 0;
   }
 }

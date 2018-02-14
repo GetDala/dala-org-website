@@ -8,10 +8,78 @@
     background: $color-scampipurple-base;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      @include banner;
+    }
+
+    p {
+      @include subheadline-two;
+
+      position: relative;
+      padding: gridbase-multiplier(2);
+      margin-top: gridbase-multiplier(2);
+    }
+    p:before {
+      @include setAbsolute($top: 0, $left: 50%);
+      @include transform(translateX(-50%));
+
+      content: "";
+      height: 4px;
+      width: 25%;
+      background: $color-scampipurple-tint4;
+    }
   }
   .partners-form {
     background: $color-scampipurple-shade1;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    .input-wrapper {
+      margin-bottom: gridbase-multiplier(1);
+      padding: 0 18px;
+
+      label {
+        @include subheadline-one;
+
+        color: $color-scampipurple-tint3;
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      input, textarea {
+        @include subheadline-one;
+        @include transition($prop: all, $time: 0.2s);
+
+        color: $color-walateal-tint4;
+        width: 100%;
+        background: $color-scampipurple-shade2;
+        border: none;
+        padding: gridbase-multiplier(1);
+        border-bottom: 4px solid $color-scampipurple-base;
+        outline: none;
+      }
+      input:focus, textarea:focus {
+        background: $color-scampipurple-shade3;
+      }
+
+      @media screen and (max-width: $desktop) {
+        padding: 0 36px;
+      }
+    }
+
+    .button-wrapper {
+      text-align: right;
+      padding: 0 18px;
+
+      @media screen and (max-width: $desktop) {
+        padding: 0 36px;
+      }
+    }
   }
 }

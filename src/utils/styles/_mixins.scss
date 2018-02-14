@@ -132,6 +132,6 @@
   background: $default;
   background: -moz-linear-gradient(-45deg, $color1 0%, $color2 100%);
   background: -webkit-linear-gradient(-45deg, $color1 0%,$color2 100%);
-  background: linear-gradient(to 135deg, $color1 0%,$color2 100%);
+  background: linear-gradient(135deg, $color1 0%,$color2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 );
 }

@@ -1,14 +1,29 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Slider from 'react-slick';
 
 // styles
 import './News.css';
 
 // images
+import DefaultImage from '../Hero/images/headerBG1440.jpg';
 
 // components
 
 class News extends Component {
+
+  constructor(props) {
+    super(props)
+    this.next = this.next.bind(this)
+    this.previous = this.previous.bind(this)
+  }
+
+  next() {
+    this.slider.slickNext()
+  }
+
+  previous() {
+    this.slider.slickPrev()
+  }
 
   render() {
     var settings = {
@@ -17,6 +32,8 @@ class News extends Component {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
+        adaptiveHeight: false,
+        lazyLoad: true,
         responsive: [
           {
             breakpoint: 769,
@@ -44,7 +61,19 @@ class News extends Component {
     ;
     return (
       <section id="News">
-        <div className="container">
+        <div className="container is-fluid slider-controls">
+          <div className="slider-arrow left is-flex">
+            <button onClick={this.previous}>
+              <span className="chevron left"></span>
+            </button>
+            <span className="slider-arrow-label">Prev</span>
+          </div>
+          <div className="slider-arrow right is-flex">
+            <span className="slider-arrow-label">Next</span>
+            <button onClick={this.next}>
+              <span className="chevron right"></span>
+            </button>
+          </div>
           <div className="columns">
             <div className="column is-8 is-offset-2">
               <header className="section-header has-text-centered">
@@ -55,41 +84,102 @@ class News extends Component {
             </div>
           </div>
         </div>
-        <Slider className="articles" {...settings}>
-          <div className="article-slide">
-            <div className="article-image"></div>
+        <Slider className="articles" {...settings} ref={c => this.slider = c}>
+          <div className="article-slide" onClick={() => {
+          }}>
+            <div className="article-image"
+                 style={{backgroundImage: 'url(https://cdn.cnbcafrica.com/wp-content/uploads/2017/10/09155553/apo_logo-768x461.png'}}></div>
             <div className="article-details">
-              <div className="article-source">Source</div>
-              <h3 className="article-headline">Headline</h3>
-              <p className="article-description">News Article Description</p>
-              <a href="#!">Read Article</a>
+              <div className="article-source">CNBC Africa</div>
+              <h3 className="article-headline">Can cryptocurrencies reduce global poverty?</h3>
+              <a className="article-link"
+                 href="https://www.cnbcafrica.com/apo/2017/12/07/can-cryptocurrencies-reduce-global-poverty/">Read
+                Article</a>
             </div>
           </div>
           <div className="article-slide">
-            <div className="article-image"></div>
+            <div className="article-image"
+                 style={{backgroundImage: 'url(https://img.huffingtonpost.com/asset/59edfb2714000028008c92c1.jpg?ops=scalefit_820_noupscale)'}}></div>
             <div className="article-details">
-              <div className="article-source">Source</div>
-              <h3 className="article-headline">Headline</h3>
-              <p className="article-description">News Article Description</p>
-              <a href="#!">Read Article</a>
+              <div className="article-source">Huffington Post</div>
+              <h3 className="article-headline">Can Blockchain Solve The Prosperity Paradox?</h3>
+              <a className="article-link"
+                 href="https://www.huffingtonpost.com/entry/can-blockchain-solve-the-prosperity-paradox_us_59edfa93e4b092f9f24193d2">Read
+                Article</a>
             </div>
           </div>
           <div className="article-slide">
-            <div className="article-image"></div>
+            <div className="article-image"
+                 style={{backgroundImage: 'url(https://www.coinspeaker.com/wp-content/themes/cs/images/default/bitcoin-symbol-05.jpg)'}}></div>
             <div className="article-details">
-              <div className="article-source">Source</div>
-              <h3 className="article-headline">Headline</h3>
-              <p className="article-description">News Article Description</p>
-              <a href="#!">Read Article</a>
+              <div className="article-source">Coinspeaker</div>
+              <h3 className="article-headline">Newtown Partners Invests in Blockchain Start-Up Wala, To Solve Financial
+                Exclusion Affecting 3.5bn People</h3>
+              <a className="article-link"
+                 href="https://www.coinspeaker.com/2017/10/04/newtown-partners-invests-blockchain-start-wala-solve-financial-exclusion-affecting-3-5bn-people/">Read
+                Article</a>
             </div>
           </div>
           <div className="article-slide">
-            <div className="article-image"></div>
+            <div className="article-image"
+                 style={{backgroundImage: 'url(https://coinreviews.io/wp-content/uploads/2017/10/tricia-martinez-wala.png'}}></div>
             <div className="article-details">
-              <div className="article-source">Source</div>
-              <h3 className="article-headline">Headline</h3>
-              <p className="article-description">News Article Description</p>
-              <a href="#!">Read Article</a>
+              <div className="article-source">Coin Reviews</div>
+              <h3 className="article-headline">Tricia Martinez – Wala, Founder & Chief Executive Officer</h3>
+              <a className="article-link" href="https://coinreviews.io/tricia-martinez-wala/">Read Article</a>
+            </div>
+          </div>
+          <div className="article-slide">
+            <div className="article-image"
+                 style={{backgroundImage: 'url(https://ventureburn.com/wp-content/uploads/2017/10/Walateam1.jpg'}}></div>
+            <div className="article-details">
+              <div className="article-source">Ventureburn</div>
+              <h3 className="article-headline">Fintech startup Wala secures equity investment from Newtown Partners</h3>
+              <a className="article-link" href="https://ventureburn.com/2017/10/wala-investment-newtown-partners/">Read Article</a>
+            </div>
+          </div>
+          <div className="article-slide">
+            <div className="article-image"
+                 style={{backgroundImage: 'url(http://disrupt-africa.com/wp-content/uploads/2017/10/Wala-1-702x336.jpg'}}></div>
+            <div className="article-details">
+              <div className="article-source">Disrupt Africa</div>
+              <h3 className="article-headline">SA’s Wala partners Veridium to pilot biometric banking authentication</h3>
+              <a className="article-link" href="http://disrupt-africa.com/2017/11/sas-wala-partners-veridium-to-pilot-biometric-banking-authentication/">Read Article</a>
+            </div>
+          </div>
+          <div className="article-slide">
+            <div className="article-image" style={{backgroundImage: 'url(http://mvendr.com/img/home.png)'}}></div>
+            <div className="article-details">
+              <div className="article-source">Finextra</div>
+              <h3 className="article-headline">M-vendr to accept Wala digital currency at mPOS</h3>
+              <a className="article-link" href="https://www.finextra.com/pressarticle/71234/m-vendr-to-accept-wala-digital-currency-at-mpos">Read Article</a>
+            </div>
+          </div>
+          <div className="article-slide">
+            <div className="article-image"
+                 style={{backgroundImage: 'url(https://www.fincaimpact.com/wp-content/uploads/2017/10/mobile-Africa.jpg'}}></div>
+            <div className="article-details">
+              <div className="article-source">Finca Impact Finance</div>
+              <h3 className="article-headline">Universal and Affordable Financial Services are Possible – Only Through Collaboration</h3>
+              <a className="article-link" href="https://www.fincaimpact.com/news-insights/finca-and-wala-offer-innovative-mobile-financial-services/">Read Article</a>
+            </div>
+          </div>
+          <div className="article-slide">
+            <div className="article-image"
+                 style={{backgroundImage: 'url(https://ventureburn.com/wp-content/uploads/2017/10/wala-ceo-tricia-martinez.jpg'}}></div>
+            <div className="article-details">
+              <div className="article-source">Ventureburn</div>
+              <h3 className="article-headline">Q&A: Wala CEO on tackling financial exclusion in emerging markets</h3>
+              <a className="article-link" href="https://ventureburn.com/2017/10/wala-financial-exclusion-emerging-markets/">Read Article</a>
+            </div>
+          </div>
+          <div className="article-slide">
+            <div className="article-image"
+                 style={{backgroundImage: `url(${DefaultImage})`}}></div>
+            <div className="article-details">
+              <div className="article-source">InvestItIn</div>
+              <h3 className="article-headline">Dala: A social model to bank the unbanked</h3>
+              <a className="article-link" href="https://www.investitin.com/wala/">Read Article</a>
             </div>
           </div>
         </Slider>

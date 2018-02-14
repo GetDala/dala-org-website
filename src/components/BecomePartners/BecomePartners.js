@@ -14,8 +14,8 @@ class BecomePartners extends Component {
       <section id="BecomePartners">
        <div className="container">
          <div className="columns is-desktop">
-           <div className="column is-half-desktop partners-content">
-             <h1>Interested in Becoming a Dala Partner?</h1>
+           <div className="column is-half-desktop partners-content has-text-centered is-flex-desktop">
+             <h1>Interested in Becoming<br />a Dala Partner?</h1>
              <p>Get in touch with us today!</p>
            </div>
            <div className="column is-half-desktop partners-form">
@@ -33,7 +33,7 @@ class BecomePartners extends Component {
              </div>
              <div className="input-wrapper">
                <label>Name</label>
-               <textarea></textarea>
+               <textarea rows={4}></textarea>
              </div>
              <div className="button-wrapper">
                <CallToAction label="Submit" destiniation="" />
