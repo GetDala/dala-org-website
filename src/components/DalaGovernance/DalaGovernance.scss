@@ -1,0 +1,26 @@
+@import '../../utils/styles/all';
+
+#DalaGovernance {
+  padding-bottom: gridbase-multiplier(3);
+
+  .section-content {
+    .columns {
+      @include border-radius;
+
+      box-shadow: $layout-elevation-3;
+      position: relative;
+
+      .governance-content {
+        background: $color-walateal-shade1;
+      }
+      .governance-image {
+        background: $color-walateal-shade2;
+      }
+    }
+
+    p {
+      color: white;
+      max-width: 434px;
+    }
+  }
+}

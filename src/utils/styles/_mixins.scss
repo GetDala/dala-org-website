@@ -107,3 +107,31 @@
   -o-transform: $method;
   transform: $method;
 }
+
+@mixin border-radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+@mixin horizontalGradient($color1, $color2, $default) {
+  background: $default;
+  background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+  background: -webkit-linear-gradient(left, $color1 0%,$color2 100%);
+  background: linear-gradient(to right, $color1 0%,$color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 );
+}
+@mixin verticalGradient($color1, $color2, $default) {
+  background: $default;
+  background: -moz-linear-gradient(top, $color1 0%, $color2 100%);
+  background: -webkit-linear-gradient(top, $color1 0%,$color2 100%);
+  background: linear-gradient(to bottom, $color1 0%,$color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 );
+}
+@mixin downDiagonalGradient($color1, $color2, $default) {
+  background: $default;
+  background: -moz-linear-gradient(-45deg, $color1 0%, $color2 100%);
+  background: -webkit-linear-gradient(-45deg, $color1 0%,$color2 100%);
+  background: linear-gradient(to 135deg, $color1 0%,$color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 );
+}

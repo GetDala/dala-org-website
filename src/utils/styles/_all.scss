@@ -1,3 +1,9 @@
+// Bulma Variables
+$gap: 36px;
+$column-gap: 18px;
+@import "bulma/sass/utilities/_all";
+
+// Dala variables
 @import "./design-system.scss";
 @import "./functions.scss";
 @import "./mixins.scss";

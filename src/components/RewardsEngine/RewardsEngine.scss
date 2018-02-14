@@ -1,0 +1,93 @@
+@import '../../utils/styles/all';
+
+#RewardsEngine {
+  padding-bottom: gridbase-multiplier(3);
+
+  .section-content {
+    .columns {
+      @include border-radius;
+      @include verticalGradient($color-scampipurple-shade1, $color-scampipurple-shade3, $color-scampipurple-shade3);
+
+      box-shadow: $layout-elevation-3;
+      position: relative;
+
+      @media screen and (min-width: $desktop){
+        @include horizontalGradient($color-scampipurple-shade1, $color-scampipurple-shade3, $color-scampipurple-shade3);
+        padding: gridbase-multiplier(3) 0;
+      }
+
+      @media screen and (min-width: $widescreen){
+        padding: 0;
+      }
+    }
+
+    .float-on-desktop {
+      p {
+        color: white;
+      }
+
+      @media screen and (min-width: $desktop){
+        @include setAbsolute($top: 50%, $left: 0);
+        @include transform(translateY(-50%));
+
+        width: 50%;
+        padding: 0;
+
+        p {
+          max-width: 434px;
+          margin-left: 36px;
+        }
+      }
+    }
+  }
+}
+
+#RewardsEngineGraphic {
+  width: 100%;
+
+  .cls-1 {
+    isolation: isolate;
+  }
+  .cls-2 {
+    fill: #aca9d0;
+  }
+  .cls-16, .cls-3 {
+    fill: #746fb0;
+  }
+  .cls-4 {
+    fill: #4ad0ca;
+  }
+  .cls-5 {
+    fill: #25969b;
+  }
+  .cls-10, .cls-11, .cls-6, .cls-9 {
+    fill: #1dc4bd;
+  }
+  .cls-7 {
+    fill: #fff;
+  }
+  .cls-8 {
+    fill: #908cc0;
+  }
+  .cls-9 {
+    opacity: 0.2;
+  }
+  .cls-10, .cls-12, .cls-16 {
+    opacity: 0.4;
+  }
+  .cls-11, .cls-17 {
+    opacity: 0.6;
+  }
+  .cls-13 {
+    fill: #f1f2f2;
+  }
+  .cls-14 {
+    fill: #46436a;
+  }
+  .cls-15 {
+    fill: #77dcd7;
+  }
+  .cls-16 {
+    mix-blend-mode: multiply;
+  }
+}

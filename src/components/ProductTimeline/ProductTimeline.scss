@@ -1,0 +1,59 @@
+@import '../../utils/styles/all';
+
+#ProductTimeline {
+  .timeline li {
+    margin-bottom: gridbase-multiplier(2);
+    align-items: center;
+  }
+  .timeline li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline-content, .timeline-date {
+    float: right;
+
+    @media screen and (min-width: $desktop) {
+      float: none;
+    }
+  }
+  .timeline-content {
+    @include body-text;
+
+    width: 83.33333%;
+    text-align: right;
+    padding-right: 36px;
+  }
+  .timeline-date {
+    width: 16.66667%;
+    position: relative;
+    text-align: center;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    span {
+      @include setAbsolute($top: 50%, $left: 50%);
+      @include transform(translate(-50%, -50%));
+
+      color: white;
+      z-index: 5;
+      font-family: 'proxima_nova_extrabold', sans-serif;
+      font-size: $typography-typescale-size-26;
+    }
+  }
+  .add-dash:after {
+    @include setAbsolute($top: gridbase-multiplier(2), $bottom: 0, $left: 50%);
+
+    content: " ";
+    display: block;
+    height: 100%;
+    margin-left: -2px;
+    border-left: 4px dashed $color-scampipurple-base;
+    z-index: -1;
+  }
+
+  .phone-wrapper {
+    text-align: center;
+  }
+}

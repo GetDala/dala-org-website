@@ -10,6 +10,11 @@ $column-gap: 18px;
 @import "bulma/sass/components/level";
 @import "bulma/sass/components/navbar";
 
+// responsive values
+$tablet-width: $tablet;
+$desktop-width: $desktop;
+$widescreen-width: $widescreen;
+
 // FONT IMPORTS
 @font-face {
   font-family: 'poppins_light';
@@ -72,6 +77,29 @@ body {
   -moz-font-feature-settings: "liga", "clig";
   -webkit-font-feature-settings: "liga", "clig";
   font-feature-settings: "liga", "clig";
+}
+
+h2.section-title {
+  @include banner;
+
+  color: $color-charcoal-base;
+}
+h3.section-description {
+  @include subheadline-two;
+
+  color: $color-scampipurple-base
+}
+
+.section-header h3 {
+  margin-bottom: gridbase-multiplier(2);
+}
+.section-content {
+  p {
+    @include body-text-dense;
+
+    margin-bottom: 23px;
+    /*max-width: 434px;*/
+  }
 }
 
 .transparent {

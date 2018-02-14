@@ -1,0 +1,75 @@
+@import '../../utils/styles/all';
+
+#DalaEcosystem {
+  padding-bottom: gridbase-multiplier(3);
+
+  .add-elevation {
+    @include border-radius;
+
+    -webkit-box-shadow: $layout-elevation-3;
+    -moz-box-shadow: $layout-elevation-3;
+    box-shadow: $layout-elevation-3;
+  }
+
+  .section-content {
+    .main-content {
+      position: relative;
+    }
+    .dala-explainer {
+      background: $color-scampipurple-shade1;
+      z-index: 1;
+    }
+    .wala-explainer {
+      background: $color-walateal-shade1;
+      z-index: 1;
+    }
+    p {
+      color: white;
+      max-width: 434px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .logo-wrapper {
+      text-align: center;
+      margin-bottom: gridbase-multiplier(2);
+    }
+
+    @media screen and (min-width: $desktop){
+      .wala-explainer, .dala-explainer {
+        background: none;
+      }
+      .main-content:before {
+        @include setAbsolute($top: 0, $left: 0, $bottom: 0);
+
+        content: "";
+        display: block;
+        width: 50%;
+        z-index: -1;
+        border-top-left-radius: 3px;
+        background: $color-scampipurple-shade1;
+      }
+      .main-content:after {
+        @include setAbsolute($top: 0, $right: 0, $bottom: 0);
+
+        content: "";
+        display: block;
+        width: 50%;
+        z-index: -1;
+        border-top-right-radius: 3px;
+        background: $color-walateal-shade1;
+      }
+      .hexagon-graphic {
+        @include setAbsolute($top: 0, $bottom: 0, $left: 50%);
+        @include transform(translateX(-50%));
+
+        z-index: 0;
+        width: 33.333333%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#HexagonLockImg {
+  height: 100%;
+}

@@ -1,0 +1,117 @@
+@import '../../utils/styles/all';
+
+#AboutDala {
+  padding-bottom: gridbase-multiplier(3);
+
+  .section-content {
+    .columns {
+      @include border-radius;
+      @include verticalGradient($color-scampipurple-shade1, $color-scampipurple-shade3, $color-scampipurple-shade3);
+
+      box-shadow: $layout-elevation-3;
+      position: relative;
+
+      @media screen and (min-width: $desktop){
+        @include horizontalGradient($color-scampipurple-shade1, $color-scampipurple-shade3, $color-scampipurple-shade3);
+        padding: gridbase-multiplier(3) 0;
+      }
+
+      @media screen and (min-width: $widescreen){
+        padding: 0;
+      }
+    }
+
+    .float-on-desktop {
+      p {
+        color: white;
+      }
+
+      @media screen and (min-width: $desktop){
+        @include setAbsolute($top: 50%, $left: 0);
+        @include transform(translateY(-50%));
+
+        width: 50%;
+        padding: 0;
+
+        p {
+          max-width: 434px;
+          margin-left: 36px;
+        }
+      }
+    }
+  }
+}
+
+#IsometricMap {
+  width: 100%;
+
+  .cls-1 {
+    fill: #7770b3;
+  }
+  .cls-2 {
+    fill: #c7c5df;
+  }
+  .cls-3 {
+    fill: url(#linear-gradient);
+  }
+  .cls-4 {
+    fill: url(#linear-gradient-2);
+  }
+  .cls-5 {
+    fill: url(#linear-gradient-3);
+  }
+  .cls-6 {
+    fill: url(#linear-gradient-4);
+  }
+  .cls-7 {
+    fill: url(#linear-gradient-5);
+  }
+  .cls-8 {
+    fill: url(#linear-gradient-6);
+  }
+  .cls-9 {
+    fill: url(#linear-gradient-7);
+  }
+  .cls-10 {
+    fill: url(#linear-gradient-8);
+  }
+  .cls-11 {
+    fill: url(#linear-gradient-9);
+  }
+  .cls-12 {
+    fill: url(#linear-gradient-10);
+  }
+  .cls-13 {
+    fill: url(#linear-gradient-11);
+  }
+  .cls-14 {
+    fill: url(#linear-gradient-12);
+  }
+  .cls-15 {
+    fill: url(#linear-gradient-13);
+  }
+  .cls-16 {
+    fill: url(#linear-gradient-14);
+  }
+  .cls-17 {
+    fill: url(#linear-gradient-15);
+  }
+  .cls-18 {
+    fill: url(#linear-gradient-16);
+  }
+  .cls-19 {
+    fill: #1dc4bd;
+  }
+  .cls-20 {
+    fill: #5d598d;
+  }
+  .cls-21 {
+    fill: #908cc0;
+  }
+  .cls-22 {
+    fill: #746fb0;
+  }
+  .cls-23 {
+    fill: #fff;
+  }
+}

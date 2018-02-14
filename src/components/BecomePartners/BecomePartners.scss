@@ -1,0 +1,17 @@
+@import '../../utils/styles/all';
+
+#BecomePartners {
+  background: $color-scampipurple-shade2;
+  padding: gridbase-multiplier(3) 0;
+
+  .partners-content {
+    background: $color-scampipurple-base;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .partners-form {
+    background: $color-scampipurple-shade1;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
