@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Scroll from 'react-scroll';
 
 // styles
 import './HeroNavBar.css';
@@ -10,7 +11,14 @@ import DalaLogomark from './images/dala-logomark.svg';
 // components
 import CallToAction from '../../CallToAction/CallToAction';
 
+var scroller = Scroll.animateScroll;
+var Link = Scroll.Link;
+
 class HeroNavBar extends Component {
+
+  scrollTo(section) {
+    scroller.scrollTo(section);
+  }
 
   render() {
     return (
@@ -21,27 +29,28 @@ class HeroNavBar extends Component {
           </a>
         </div>
         <div className="navbar-end">
-          <a href="#home" className="hero-navbar-right-link">
+          <Link className="hero-navbar-right-link" to="pageAboutDala" smooth>
             About Us
-          </a>
-          <a href="#home" className="hero-navbar-right-link">
+          </Link>
+          <Link className="hero-navbar-right-link" to="pageDalaEcosystem" smooth>
             Ecosystem
-          </a>
-          <a href="#home" className="hero-navbar-right-link">
+          </Link>
+          <Link className="hero-navbar-right-link" to="pageRewardsEngine" smooth>
             Rewards
-          </a>
-          <a href="#home" className="hero-navbar-right-link">
+          </Link>
+          <Link className="hero-navbar-right-link" to="pageDalaGovernance" smooth>
             Governance
-          </a>
-          <a href="#home" className="hero-navbar-right-link">
+          </Link>
+          <Link className="hero-navbar-right-link" to="pageDalaProductTimeline" smooth>
             Timeline
-          </a>
-          <a href="#home" className="hero-navbar-right-link">
+          </Link>
+          <Link className="hero-navbar-right-link" to="pageTokenSale" smooth>
             ICO
-          </a>
+          </Link>
           <CallToAction
+            variation={'scroll'}
             label={'Partner With Us'}
-            destination={'#!'}
+            destination={'pageBecomePartners'}
             helperClasses={['navbar-cta']}
           />
         </div>

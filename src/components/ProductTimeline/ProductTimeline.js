@@ -11,7 +11,7 @@ import DalaTokenBlank from './images/token.svg';
 class ProductTimeline extends Component {
   render() {
     return (
-      <section id="ProductTimeline">
+      <section id="ProductTimeline" name="pageDalaProductTimeline">
         <div className="container">
           <div className="columns">
             <div className="column is-8 is-offset-2">

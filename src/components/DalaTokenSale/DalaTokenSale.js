@@ -10,7 +10,7 @@ import CallToAction from '../CallToAction/CallToAction';
 class DalaTokenSale extends Component {
   render() {
     return (
-      <section id="DalaTokenSale">
+      <section id="DalaTokenSale" name="pageTokenSale">
         <div className="container">
           <div className="columns">
             <div className="column is-8 is-offset-2">
@@ -33,7 +33,7 @@ class DalaTokenSale extends Component {
           <div className="columns">
             <div className="column is-8 is-offset-2">
               <div className="more-info">More information on the Dala Token Sale and Telegram</div>
-              <CallToAction destination="#!" label={'Token Website'} />
+              <CallToAction variation="anchor" destination="https://tokensale.getwala.com/" label={'Token Website'} />
             </div>
           </div>
         </div>

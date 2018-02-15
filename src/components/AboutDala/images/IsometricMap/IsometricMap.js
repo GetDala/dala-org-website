@@ -8,35 +8,35 @@ const IsometricMap = () => (
         <stop offset="0" stopColor="#c7c5df"/>
         <stop offset="1" stopColor="#1dc4bd"/>
       </linearGradient>
-      <linearGradient id="linear-gradient-2" x1="601.78" y1="306.77" x2="601.78" y2="263.77"
+      <linearGradient id="linear-gradient-2" x1="601.78" y1="306.77" x2="601.78" y2="263.77" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-3" x1="531.45" y1="333.97" x2="531.45" y2="290.97"
+      <linearGradient id="linear-gradient-3" x1="531.45" y1="333.97" x2="531.45" y2="290.97" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-4" x1="509.12" y1="267.2" x2="509.12" y2="224.2"
+      <linearGradient id="linear-gradient-4" x1="509.12" y1="267.2" x2="509.12" y2="224.2" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-5" x1="533.23" y1="199.87" x2="533.23" y2="156.87"
+      <linearGradient id="linear-gradient-5" x1="533.23" y1="199.87" x2="533.23" y2="156.87" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-6" x1="627.37" y1="118.71" x2="627.37" y2="75.71"
+      <linearGradient id="linear-gradient-6" x1="627.37" y1="118.71" x2="627.37" y2="75.71" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-7" x1="661.42" y1="192.26" x2="661.42" y2="149.26"
+      <linearGradient id="linear-gradient-7" x1="661.42" y1="192.26" x2="661.42" y2="149.26" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-8" x1="731.78" y1="152.01" x2="731.78" y2="109.01"
+      <linearGradient id="linear-gradient-8" x1="731.78" y1="152.01" x2="731.78" y2="109.01" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-9" x1="975.62" y1="211.2" x2="975.62" y2="168.2"
+      <linearGradient id="linear-gradient-9" x1="975.62" y1="211.2" x2="975.62" y2="168.2" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-10" x1="181.25" y1="416.06" x2="181.25" y2="373.06"
+      <linearGradient id="linear-gradient-10" x1="181.25" y1="416.06" x2="181.25" y2="373.06" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-11" x1="250.8" y1="442.96" x2="250.8" y2="399.96"
+      <linearGradient id="linear-gradient-11" x1="250.8" y1="442.96" x2="250.8" y2="399.96" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-12" x1="298.03" y1="389.17" x2="298.03" y2="346.17"
+      <linearGradient id="linear-gradient-12" x1="298.03" y1="389.17" x2="298.03" y2="346.17" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-13" x1="413.53" y1="455.66" x2="413.53" y2="412.66"
+      <linearGradient id="linear-gradient-13" x1="413.53" y1="455.66" x2="413.53" y2="412.66" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-14" x1="495.45" y1="435.44" x2="495.45" y2="392.44"
+      <linearGradient id="linear-gradient-14" x1="495.45" y1="435.44" x2="495.45" y2="392.44" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-15" x1="529.34" y1="508.92" x2="529.34" y2="465.92"
+      <linearGradient id="linear-gradient-15" x1="529.34" y1="508.92" x2="529.34" y2="465.92" xlinkHref="#linear-gradient"
                       />
-      <linearGradient id="linear-gradient-16" x1="474.59" y1="233.72" x2="474.59" y2="190.72"
+      <linearGradient id="linear-gradient-16" x1="474.59" y1="233.72" x2="474.59" y2="190.72" xlinkHref="#linear-gradient"
                       />
     </defs>
     <title>isometric_map</title>

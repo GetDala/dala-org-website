@@ -12,7 +12,7 @@ class AboutDala extends Component {
 
   render() {
     return (
-      <section id="AboutDala">
+      <section id="AboutDala" name="pageAboutDala">
         <div className="container">
           <div className="columns">
             <div className="column is-8 is-offset-2">

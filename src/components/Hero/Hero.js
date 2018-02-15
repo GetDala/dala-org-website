@@ -11,8 +11,8 @@ import LearnMoreChevron from './images/LearnMoreChevron/LearnMoreChevron';
 
 // components
 import DalaWordmark from './images/DalaWordmark/DalaWordmark';
-//import DalaCubeAnimation from './images/DalaCubeAnimation/DalaCubeAnimation';
-import DalaBorderlessBlock from './images/DalaBorderlessLogo/DalaBorderlessLogo';
+import DalaCubeAnimation from './images/DalaCubeAnimation/DalaCubeAnimation';
+//import DalaBorderlessBlock from './images/DalaBorderlessLogo/DalaBorderlessLogo';
 import HeroNavbar from '../Navbars/HeroNavbar/HeroNavBar';
 
 class Hero extends Component {
@@ -27,7 +27,7 @@ class Hero extends Component {
         <div className="hero-head">
           <HeroNavbar />
         </div>
-        <div className="dala-borderless-logo-wrapper"><DalaBorderlessBlock /></div>
+        <div className="dala-cube-animation-wrapper"><DalaCubeAnimation /></div>
         <div className="hero-content">
           <div className="dala-wordmark-wrapper"><DalaWordmark /></div>
           <h1 className="hero-h1">Enabling zero-fee instantaneous and borderless micropayments</h1>

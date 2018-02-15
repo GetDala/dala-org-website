@@ -11,7 +11,7 @@ class BecomePartners extends Component {
 
   render() {
     return (
-      <section id="BecomePartners">
+      <section id="BecomePartners" name="pageBecomePartners">
        <div className="container">
          <div className="columns is-desktop">
            <div className="column is-half-desktop partners-content has-text-centered is-flex-desktop">
@@ -36,7 +36,7 @@ class BecomePartners extends Component {
                <textarea rows={4}></textarea>
              </div>
              <div className="button-wrapper">
-               <CallToAction label="Submit" destiniation="" />
+               <CallToAction variation="button" label="Submit" onClick={() => {}} />
              </div>
            </div>
          </div>
