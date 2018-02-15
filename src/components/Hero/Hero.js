@@ -30,7 +30,7 @@ class Hero extends Component {
         <div className="dala-cube-animation-wrapper"><DalaCubeAnimation /></div>
         <div className="hero-content">
           <div className="dala-wordmark-wrapper"><DalaWordmark /></div>
-          <h1 className="hero-h1">Enabling zero-fee instantaneous and borderless micropayments</h1>
+          <h1 className="hero-h1">Enabling zero-fee, instant, and borderless micropayments</h1>
           <h2 className="hero-h2">Designed to include 3.5 billion people in the formal financial system</h2>
           <div className="learn-more">
             <span>Learn More</span>
