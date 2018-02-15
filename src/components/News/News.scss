@@ -2,6 +2,7 @@
 
 #News {
   margin-top: gridbase-multiplier(1);
+  overflow-x: hidden;
 
   .section-header {
     padding-bottom: gridbase-multiplier(1);
@@ -23,6 +24,7 @@
       background: $color-walateal-base;
       outline: none;
       cursor: pointer;
+      border: none;
 
       -webkit-border-radius: 19.5px;
       -moz-border-radius: 19.5px;

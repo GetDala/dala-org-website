@@ -2,9 +2,17 @@
 
 #ProductTimeline {
   padding-bottom: gridbase-multiplier(4);
+  overflow-x: hidden;
 
   .section-header {
     padding-bottom: gridbase-multiplier(2);
+  }
+  .section-content {
+    .columns {
+      @media screen and (max-width: $desktop) {
+        overflow-x: hidden;
+      };
+    }
   }
   .timeline {
     @media screen and (min-width: $desktop) {
@@ -126,6 +134,7 @@
 
   .phone-wrapper {
     text-align: center;
+    overflow-x: hidden;
   }
   .phone-flex {
     @media screen and (min-width: $desktop) {
