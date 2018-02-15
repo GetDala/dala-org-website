@@ -32,7 +32,7 @@ class BecomePartners extends Component {
                <input type="text" />
              </div>
              <div className="input-wrapper">
-               <label>Name</label>
+               <label>Message</label>
                <textarea rows={4}></textarea>
              </div>
              <div className="button-wrapper">
