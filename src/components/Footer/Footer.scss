@@ -22,4 +22,10 @@
     color: $color-scampipurple-shade2;
     padding-bottom: gridbase-multiplier(2);
   }
+
+  .level-left, .level-right {
+    @media screen and (max-width: $desktop) {
+      text-align: center;
+    }
+  }
 }
