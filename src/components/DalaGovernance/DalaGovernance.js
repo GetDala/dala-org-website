@@ -28,10 +28,10 @@ class DalaGovernance extends Component {
             <div className="columns is-desktop">
               <div className="column is-half-desktop governance-content is-flex-desktop">
                 <p>
-                  The Dala Corporation administers and maintains the Dala token technology. The Corporation makes decisions on the future governance of Dala, as it evolves into a fully-decentralized organization, by monitoring the market for best-in-class solutions. With a long-term goal of maximizing the value of the Dala ecosystem, the Dala corporation is focused on key growth drivers, the size, and utility of the network to end-users.
+                  The Dala Foundation administers and maintains the Dala token technology. The Foundation makes decisions on the future governance of Dala, as it evolves into a fully-decentralized organization, by monitoring the market for best-in-class solutions. With a long-term goal of maximizing the value of the Dala ecosystem, the Dala Foundation is focused on key growth drivers, the size, and utility of the network to end-users.
                 </p>
                 <p>
-                  The Corporation will fund research and technical development of the Dala ecosystem. It is tasked with developing and implementing changes that improve the performance of the entire Dala ecosystem and more generally, micropayments using blockchain technology. Through this function, the Dala Corporation expects to actively contribute to the development of the cryptocurrency ecosystem.
+                  The Foundation will fund research and technical development of the Dala ecosystem. It is tasked with developing and implementing changes that improve the performance of the entire Dala ecosystem and more generally, micropayments using blockchain technology. Through this function, the Dala Foundation expects to actively contribute to the development of the cryptocurrency ecosystem.
                 </p>
               </div>
               <div className="column is-half-desktop governance-image">

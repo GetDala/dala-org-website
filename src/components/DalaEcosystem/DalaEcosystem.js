@@ -55,9 +55,9 @@ class DalaEcosystem extends Component {
                     </div>
                     <p>
                       The Dala ecosystem expands through partnerships across borders and financial services, enabling
-                      consumers and enterprises to transact, save, lend, and invest with Dala. The Dala Corporation’s
+                      consumers and enterprises to transact, save, lend, and invest with Dala. The Dala Foundation’s
                       long-term goal is to maximize the value of the Dala ecosystem. The largest driver of Dala network
-                      value is the size and utility of the network to end-users, which the Corporation will drive
+                      value is the size and utility of the network to end-users, which the Foundation will drive
                       through token rewards and the provision of software tools to enable the use of Dala.
                     </p>
                   </div>
