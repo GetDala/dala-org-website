@@ -1,0 +1,38 @@
+@import '../../utils/styles/all';
+
+#BecomePartners {
+  overflow-x: hidden;
+  background: $color-scampipurple-shade2;
+  padding: gridbase-multiplier(3) 0;
+
+  .partners-content {
+    background: $color-scampipurple-base;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: gridbase-multiplier(2) 0;
+
+    h1 {
+      @include banner;
+    }
+
+    p {
+      @include subheadline-two;
+
+      position: relative;
+      padding: gridbase-multiplier(2);
+      margin-top: gridbase-multiplier(2);
+    }
+    p:before {
+      @include setAbsolute($top: 0, $left: 50%);
+      @include transform(translateX(-50%));
+
+      content: "";
+      height: 4px;
+      width: 25%;
+      background: $color-scampipurple-tint4;
+    }
+  }
+}

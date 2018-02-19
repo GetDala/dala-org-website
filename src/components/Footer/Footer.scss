@@ -1,0 +1,31 @@
+@import '../../utils/styles/all';
+
+#Footer {
+  background: $color-scampipurple-shade4;
+
+  .footer-nav {
+    background: $color-scampipurple-shade3;
+    padding: gridbase-multiplier(2) 36px;
+
+    a {
+      @include small-display-text;
+
+      color: $color-scampipurple-base;
+      display: inline-block;
+      margin-left: 13px;
+    }
+  }
+
+  .footer-legal {
+    @include caption-two;
+
+    color: $color-scampipurple-shade2;
+    padding-bottom: gridbase-multiplier(2);
+  }
+
+  .level-left, .level-right {
+    @media screen and (max-width: $desktop) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import '../../utils/styles/all';
+
+#DalaTokenSale {
+  position: relative;
+  padding: gridbase-multiplier(4) 36px;
+  background: url("./images/tokenBG.jpg") center center no-repeat;
+  z-index: 0;
+
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  .section-title {
+    color: white;
+  }
+
+  p {
+    color: $color-scampipurple-tint4;
+  }
+
+  .more-info {
+    color: white;
+    position: relative;
+    padding-top: gridbase-multiplier(2);
+    padding-bottom: gridbase-multiplier(2);
+  }
+  .more-info:before {
+    @include setAbsolute($top: 0, $left: 50%);
+    @include transform(translateX(-50%));
+
+    content: "";
+    height: 4px;
+    width: 25%;
+    background: $color-scampipurple-tint4;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: gridbase-multiplier(8) 0;
+  }
+}
+#DalaTokenSale:before {
+  @include setAbsolute($top: 0, $left: 0, $bottom: 0, $right: 0);
+  @include downDiagonalGradient($color-scampipurple-shade2, $color-scampipurple-base, $color-scampipurple-base);
+
+  content: " ";
+  display: block;
+  z-index: -1;
+  opacity: 0.75;
+}

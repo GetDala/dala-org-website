@@ -1,0 +1,137 @@
+// TYPOGRAPHY
+@mixin small-display-text {
+  font-family: 'proxima_nova_extrabold', sans-serif;
+  font-size: $typography-typescale-size-12;
+  line-height: $typography-typescale-size-12-lineheight;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+}
+
+@mixin caption-one {
+  font-family: 'proxima_nova_semibold', sans-serif;
+  font-size: $typography-typescale-size-12;
+  line-height: $typography-typescale-size-12-lineheight;
+}
+
+@mixin caption-two {
+  font-family: 'proxima_nova_semibold_italic', sans-serif;
+  font-size: $typography-typescale-size-12;
+  line-height: $typography-typescale-size-12-lineheight;
+}
+
+@mixin body-text-dense {
+  font-family: 'proxima_nova_regular', sans-serif;
+  font-size: $typography-typescale-size-dense-14;
+  line-height: $typography-typescale-size-dense-14-lineheight;
+}
+
+@mixin body-text {
+  font-family: 'proxima_nova_regular', sans-serif;
+  font-size: $typography-typescale-size-base;
+  line-height: $typography-typescale-size-base-lineheight;
+
+}
+
+@mixin subheadline-one {
+  font-family: 'proxima_nova_semibold', sans-serif;
+  font-size: $typography-typescale-size-base;
+  line-height: $typography-typescale-size-base-lineheight;
+}
+
+@mixin subheadline-two {
+  font-family: 'poppins_regular', sans-serif;
+  font-size: $typography-typescale-size-base;
+  line-height: $typography-typescale-size-base-lineheight;
+}
+
+@mixin headline {
+  font-family: 'poppins_regular', sans-serif;
+  font-size: $typography-typescale-size-26;
+  line-height: $typography-typescale-size-26-lineheight;
+  padding-bottom: 10px;
+}
+
+@mixin display {
+  font-family: 'proxima_nova_extrabold', sans-serif;
+  font-size: $typography-typescale-size-26;
+  line-height: $typography-typescale-size-26-lineheight;
+}
+
+@mixin banner {
+  font-family: 'poppins_light', sans-serif;
+  font-size: $typography-typescale-size-42;
+  line-height: $typography-typescale-size-42-lineheight;
+}
+
+// HELPERS
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null, $cover: false, $center: false) {
+  position: $position;
+  top: if($cover, 0, $top);
+  right: if($cover, 0, $right);
+  bottom:if($cover, 0, $bottom);
+  left: if($cover, 0, $left);
+
+  @if $center {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin setAbsolute($args...) {
+  @include position(absolute, $args...);
+}
+
+@mixin setRelative($args...) {
+  @include position(relative, $args...);
+}
+
+@mixin setFixed($args...) {
+  @include position(fixed, $args...);
+}
+
+@mixin transition($prop, $time, $easing: ease) {
+  -webkit-transition: $prop $time $easing;
+  -moz-transition: $prop $time $easing;
+  -ms-transition: $prop $time $easing;
+  -o-transition: $prop $time $easing;
+  transition: $prop $time $easing;
+}
+
+@mixin transform($method) {
+  -webkit-transform: $method;
+  -moz-transform: $method;
+  -ms-transform: $method;
+  -o-transform: $method;
+  transform: $method;
+}
+
+@mixin border-radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+@mixin horizontalGradient($color1, $color2, $default) {
+  background: $default;
+  background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+  background: -webkit-linear-gradient(left, $color1 0%,$color2 100%);
+  background: linear-gradient(to right, $color1 0%,$color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 );
+}
+@mixin verticalGradient($color1, $color2, $default) {
+  background: $default;
+  background: -moz-linear-gradient(top, $color1 0%, $color2 100%);
+  background: -webkit-linear-gradient(top, $color1 0%,$color2 100%);
+  background: linear-gradient(to bottom, $color1 0%,$color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 );
+}
+@mixin downDiagonalGradient($color1, $color2, $default) {
+  background: $default;
+  background: -moz-linear-gradient(-45deg, $color1 0%, $color2 100%);
+  background: -webkit-linear-gradient(-45deg, $color1 0%,$color2 100%);
+  background: linear-gradient(135deg, $color1 0%,$color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 );
+}

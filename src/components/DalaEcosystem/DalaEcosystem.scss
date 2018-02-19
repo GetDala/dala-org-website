@@ -1,0 +1,132 @@
+@import '../../utils/styles/all';
+
+#DalaEcosystem {
+  overflow-x: hidden;
+  padding-bottom: gridbase-multiplier(4);
+  padding-right: 36px;
+  padding-left: 36px;
+
+  .section-header {
+    padding-bottom: gridbase-multiplier(1);
+  }
+
+  .add-elevation {
+    @include border-radius;
+
+    -webkit-box-shadow: $layout-elevation-3;
+    -moz-box-shadow: $layout-elevation-3;
+    box-shadow: $layout-elevation-3;
+  }
+
+  .section-content {
+    .main-content {
+      position: relative;
+      overflow-x: hidden;
+    }
+    .main-content:before {
+      background: $color-scampipurple-shade1;
+      @include setAbsolute($top: 0, $left: 0, $right: 0);
+      content: "";
+      display: block;
+      height: 50%;
+      z-index: -2;
+      border-top-left-radius: 3px;
+
+      @media screen and (min-width: $desktop){
+        @include setAbsolute($top: 0, $left: 0, $bottom: 0, $right: auto);
+        width: 50%;
+        height: auto;
+      }
+    }
+    .main-content:after {
+      background: $color-walateal-shade1;
+      @include setAbsolute($top: 50%, $left: 0, $right: 0);
+      content: "";
+      display: block;
+      height: 50%;
+      z-index: -2;
+      border-top-right-radius: 3px;
+
+      @media screen and (min-width: $desktop){
+        @include setAbsolute($top: 0, $left: auto, $bottom: 0, $right: 0);
+        width: 50%;
+        height: auto;
+      }
+    }
+    .hexagon-graphic {
+      @include setAbsolute($top: 0, $bottom: 0, $left: 50%);
+      @include transform(translateX(-50%) rotate(90deg));
+
+      -webkit-transform-origin: 50% 50%;
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      
+      z-index: -1;
+      width: 50%;
+      text-align: center;
+      
+      @media screen and (min-width: $desktop){
+        width: 33.3333333%;
+        @include transform(translateX(-50%) rotate(0deg));
+      }
+    }
+    .dala-explainer {
+      padding: gridbase-multiplier(3) 36px gridbase-multiplier(2) 36px;
+      z-index: 0;
+    }
+    .wala-explainer {
+      padding: gridbase-multiplier(3) 36px gridbase-multiplier(2) 36px;
+      z-index: 0;
+    }
+    .wala-explainer, .dala-explainer {
+      @media screen and (min-width: $desktop){
+        background: none;
+        padding: gridbase-multiplier(4) 0 gridbase-multiplier(2) 0;
+      }
+    }
+    p {
+      color: white;
+      z-index: 1;
+
+      @media screen and (min-width: $desktop){
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 434px;
+      }
+    }
+    .logo-wrapper {
+      text-align: center;
+      margin-bottom: gridbase-multiplier(2);
+    }
+    .ecosystem-learn-more {
+      padding-top: gridbase-multiplier(1);
+      text-align: center;
+
+      .ecosystem-learn-more-content {
+        @include subheadline-two;
+
+        color: $color-scampipurple-base;
+      }
+
+      .ecosystem-links a {
+        margin-left: 18px;
+      }
+
+      @media screen and (min-width: $desktop) {
+        align-items: center;
+        text-align: left;
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop){
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+#HexagonLockImg {
+  height: 100%;
+}

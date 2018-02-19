@@ -1,0 +1,87 @@
+// COLORS
+$color-walateal-base: #1DC4BD;
+$color-walateal-tint1: #4AD0CA;
+$color-walateal-tint2: #77DCD7;
+$color-walateal-tint3: #A5E7E4;
+$color-walateal-tint4: #D2F3F2;
+$color-walateal-shade1: #25959B;
+$color-walateal-shade2: #20747B;
+$color-walateal-shade3: #1B535B;
+$color-walateal-shade4: #183A43;
+
+$color-charcoal-base: #011627;
+$color-charcoal-tint1: #334452;
+$color-charcoal-tint2: #67737C;
+$color-charcoal-tint3: #99A2A9;
+$color-charcoal-tint4: #CCD0D4;
+
+$color-torchred-base: #F71735;
+$color-torchred-tint1: #F9445C;
+$color-torchred-tint2: #FA7485;
+$color-torchred-tint3: #FCA2AE;
+$color-torchred-tint4: #FDD0D7;
+$color-torchred-shade1: #B9203E;
+$color-torchred-shade2: #8F1C35;
+$color-torchred-shade3: #65172B;
+$color-torchred-shade4: #461625;
+
+$color-poppyyellow-base: #FF9F1C;
+$color-poppyyellow-tint1: #FFAA48;
+$color-poppyyellow-tint2: #FFBD74;
+$color-poppyyellow-tint3: #FFCF9F;
+$color-poppyyellow-tint4: #FFE1CA;
+$color-poppyyellow-shade1: #D2701B;
+$color-poppyyellow-shade2: #A75516;
+$color-poppyyellow-shade3: #7C3A11;
+$color-poppyyellow-shade4: #5B250D;
+
+$color-curiousblue-base: #049FE7;
+$color-curiousblue-tint1: #36B2EC;
+$color-curiousblue-tint2: #68C4F1;
+$color-curiousblue-tint3: #9BD8F5;
+$color-curiousblue-tint4: #CDECFA;
+$color-curiousblue-shade1: #1C74AC;
+$color-curiousblue-shade2: #1B5882;
+$color-curiousblue-shade3: #1A3B58;
+$color-curiousblue-shade4: #1A2539;
+
+$color-scampipurple-base: #746FB0;
+$color-scampipurple-tint1: #908CC0;
+$color-scampipurple-tint2: #ACA9D0;
+$color-scampipurple-tint3: #C7C5DF;
+$color-scampipurple-tint4: #E3E2EF;
+$color-scampipurple-shade1: #5C588D;
+$color-scampipurple-shade2: #454369;
+$color-scampipurple-shade3: #2E2C46;
+$color-scampipurple-shade4: #1C1B2B;
+
+$color-slate: #6C7882;
+$color-iron: #B2B9BE;
+$color-silver: #E0E3E5;
+
+// TYPOGRAPHY
+$typography-typescale-size-12: 12px;
+$typography-typescale-size-12-lineheight: 19px;
+
+$typography-typescale-size-dense-14: 14px;
+$typography-typescale-size-dense-14-lineheight: 23px;
+
+$typography-typescale-size-base: 16px;
+$typography-typescale-size-base-lineheight: 26px;
+
+$typography-typescale-size-26: 26px;
+$typography-typescale-size-26-lineheight: 42px;
+
+$typography-typescale-size-42: 42px;
+$typography-typescale-size-42-lineheight: 68px;
+
+// SHADOWS
+$layout-elevation-1: 0 1px 3px rgba($color-scampipurple-base,0.12), 0 1px 2px rgba($color-scampipurple-base,0.24);
+$layout-elevation-2: 0 3px 6px rgba($color-scampipurple-base,0.16), 0 3px 6px rgba($color-scampipurple-base,0.23);
+$layout-elevation-3: 0 10px 20px rgba($color-scampipurple-base,0.19), 0 6px 6px rgba($color-scampipurple-base,0.23);
+$layout-elevation-4: 0 14px 28px rgba($color-scampipurple-base,0.25), 0 10px 10px rgba($color-scampipurple-base,0.22);
+$layout-elevation-5: 0 19px 38px rgba($color-scampipurple-base,0.30), 0 15px 12px rgba($color-scampipurple-base,0.22);
+
+// VERTICAL RHYTHM
+$layout-vertical-rhythm: 13px;
+$layout-vertical-rhythm-dense: 8px;

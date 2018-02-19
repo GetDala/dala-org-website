@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="464px" height="464px" viewBox="0 0 464 464" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Compass</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="171.5" cy="171.5" r="171.5"></circle>
+        <filter x="-5.5%" y="-5.0%" width="111.1%" height="111.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.105882353   0 0 0 0 0.325490196   0 0 0 0 0.356862745  0 0 0 0.327077672 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="172" cy="172" r="147"></circle>
+        <filter x="-6.5%" y="-5.8%" width="112.9%" height="112.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.105882353   0 0 0 0 0.325490196   0 0 0 0 0.356862745  0 0 0 0.327077672 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M32,161 L16,322 L0,161 L16,0 L32,161 Z" id="path-5"></path>
+        <filter x="-59.4%" y="-5.3%" width="218.8%" height="111.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.454901963   0 0 0 0 0.435294122   0 0 0 0 0.690196097  0 0 0 0.615743886 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Dala.org-1440-Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-159.000000, -3154.000000)">
+        <g id="Compass" transform="translate(159.000000, 3154.000000)">
+            <g id="Compass-Circles" transform="translate(59.000000, 60.000000)">
+                <g id="Oval-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#1DC4BD" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Oval-4">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#25969B" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <circle id="Oval-5" stroke="#20757B" stroke-width="4" cx="172.5" cy="172.5" r="147.5"></circle>
+                <circle id="Oval-5" stroke="#20757B" cx="173" cy="173" r="128"></circle>
+                <circle id="Oval-5" stroke="#20757B" cx="173" cy="173" r="122"></circle>
+            </g>
+            <g id="Chairs">
+                <g id="Group-17" transform="translate(199.000000, 0.000000)">
+                    <g id="Group-16" transform="translate(0.000000, 418.000000)">
+                        <rect id="Rectangle-8" fill="#1B535B" x="8" y="31" width="50" height="15" rx="3"></rect>
+                        <path d="M20.4332977,0 L45.5673927,-1.77635684e-15 C51.6425249,2.50346083e-15 56.5673927,4.92486775 56.5673927,11 C56.5673927,11.4180321 56.543563,11.8357243 56.4960197,12.2510439 L54.8830635,26.3411938 C54.7096412,27.8561432 53.4273721,29 51.9025289,29 L14.0981615,29 C12.5733183,29 11.2910492,27.8561432 11.1176268,26.3411938 L9.50467063,12.2510439 C8.81373814,6.21532989 13.1465397,0.762305451 19.1822537,0.0713729571 C19.5975734,0.0238296401 20.0152656,-1.69956559e-15 20.4332977,-1.77635684e-15 Z" id="Rectangle-8-Copy" fill="#4AD0CA"></path>
+                        <rect id="Rectangle-9" fill="#25969B" transform="translate(5.000000, 18.500000) rotate(-7.000000) translate(-5.000000, -18.500000) " x="2" y="9" width="6" height="19" rx="3"></rect>
+                        <rect id="Rectangle-9-Copy" fill="#25969B" transform="translate(61.000000, 18.500000) scale(-1, 1) rotate(-7.000000) translate(-61.000000, -18.500000) " x="58" y="9" width="6" height="19" rx="3"></rect>
+                    </g>
+                    <g id="Group-16-Copy" transform="translate(33.000000, 23.000000) scale(1, -1) translate(-33.000000, -23.000000) ">
+                        <rect id="Rectangle-8" fill="#1B535B" x="8" y="31" width="50" height="15" rx="3"></rect>
+                        <path d="M20.4332977,0 L45.5673927,-1.77635684e-15 C51.6425249,2.50346083e-15 56.5673927,4.92486775 56.5673927,11 C56.5673927,11.4180321 56.543563,11.8357243 56.4960197,12.2510439 L54.8830635,26.3411938 C54.7096412,27.8561432 53.4273721,29 51.9025289,29 L14.0981615,29 C12.5733183,29 11.2910492,27.8561432 11.1176268,26.3411938 L9.50467063,12.2510439 C8.81373814,6.21532989 13.1465397,0.762305451 19.1822537,0.0713729571 C19.5975734,0.0238296401 20.0152656,-1.69956559e-15 20.4332977,-1.77635684e-15 Z" id="Rectangle-8-Copy" fill="#4AD0CA"></path>
+                        <rect id="Rectangle-9" fill="#25969B" transform="translate(5.000000, 18.500000) rotate(-7.000000) translate(-5.000000, -18.500000) " x="2" y="9" width="6" height="19" rx="3"></rect>
+                        <rect id="Rectangle-9-Copy" fill="#25969B" transform="translate(61.000000, 18.500000) scale(-1, 1) rotate(-7.000000) translate(-61.000000, -18.500000) " x="58" y="9" width="6" height="19" rx="3"></rect>
+                    </g>
+                </g>
+                <g id="Group-17" transform="translate(232.000000, 232.000000) rotate(-270.000000) translate(-232.000000, -232.000000) translate(199.000000, 0.000000)">
+                    <g id="Group-16" transform="translate(0.000000, 418.000000)">
+                        <rect id="Rectangle-8" fill="#1B535B" x="8" y="31" width="50" height="15" rx="3"></rect>
+                        <path d="M20.4332977,0 L45.5673927,-1.77635684e-15 C51.6425249,2.50346083e-15 56.5673927,4.92486775 56.5673927,11 C56.5673927,11.4180321 56.543563,11.8357243 56.4960197,12.2510439 L54.8830635,26.3411938 C54.7096412,27.8561432 53.4273721,29 51.9025289,29 L14.0981615,29 C12.5733183,29 11.2910492,27.8561432 11.1176268,26.3411938 L9.50467063,12.2510439 C8.81373814,6.21532989 13.1465397,0.762305451 19.1822537,0.0713729571 C19.5975734,0.0238296401 20.0152656,-1.69956559e-15 20.4332977,-1.77635684e-15 Z" id="Rectangle-8-Copy" fill="#4AD0CA"></path>
+                        <rect id="Rectangle-9" fill="#25969B" transform="translate(5.000000, 18.500000) rotate(-7.000000) translate(-5.000000, -18.500000) " x="2" y="9" width="6" height="19" rx="3"></rect>
+                        <rect id="Rectangle-9-Copy" fill="#25969B" transform="translate(61.000000, 18.500000) scale(-1, 1) rotate(-7.000000) translate(-61.000000, -18.500000) " x="58" y="9" width="6" height="19" rx="3"></rect>
+                    </g>
+                    <g id="Group-16-Copy" transform="translate(33.000000, 23.000000) scale(1, -1) translate(-33.000000, -23.000000) ">
+                        <rect id="Rectangle-8" fill="#1B535B" x="8" y="31" width="50" height="15" rx="3"></rect>
+                        <path d="M20.4332977,0 L45.5673927,-1.77635684e-15 C51.6425249,2.50346083e-15 56.5673927,4.92486775 56.5673927,11 C56.5673927,11.4180321 56.543563,11.8357243 56.4960197,12.2510439 L54.8830635,26.3411938 C54.7096412,27.8561432 53.4273721,29 51.9025289,29 L14.0981615,29 C12.5733183,29 11.2910492,27.8561432 11.1176268,26.3411938 L9.50467063,12.2510439 C8.81373814,6.21532989 13.1465397,0.762305451 19.1822537,0.0713729571 C19.5975734,0.0238296401 20.0152656,-1.69956559e-15 20.4332977,-1.77635684e-15 Z" id="Rectangle-8-Copy" fill="#4AD0CA"></path>
+                        <rect id="Rectangle-9" fill="#25969B" transform="translate(5.000000, 18.500000) rotate(-7.000000) translate(-5.000000, -18.500000) " x="2" y="9" width="6" height="19" rx="3"></rect>
+                        <rect id="Rectangle-9-Copy" fill="#25969B" transform="translate(61.000000, 18.500000) scale(-1, 1) rotate(-7.000000) translate(-61.000000, -18.500000) " x="58" y="9" width="6" height="19" rx="3"></rect>
+                    </g>
+                </g>
+                <g id="Group-17" transform="translate(232.000000, 232.000000) rotate(-225.000000) translate(-232.000000, -232.000000) translate(199.000000, 0.000000)">
+                    <g id="Group-16" transform="translate(0.000000, 418.000000)">
+                        <rect id="Rectangle-8" fill="#1B535B" x="8" y="31" width="50" height="15" rx="3"></rect>
+                        <path d="M20.4332977,0 L45.5673927,-1.77635684e-15 C51.6425249,2.50346083e-15 56.5673927,4.92486775 56.5673927,11 C56.5673927,11.4180321 56.543563,11.8357243 56.4960197,12.2510439 L54.8830635,26.3411938 C54.7096412,27.8561432 53.4273721,29 51.9025289,29 L14.0981615,29 C12.5733183,29 11.2910492,27.8561432 11.1176268,26.3411938 L9.50467063,12.2510439 C8.81373814,6.21532989 13.1465397,0.762305451 19.1822537,0.0713729571 C19.5975734,0.0238296401 20.0152656,-1.69956559e-15 20.4332977,-1.77635684e-15 Z" id="Rectangle-8-Copy" fill="#4AD0CA"></path>
+                        <rect id="Rectangle-9" fill="#25969B" transform="translate(5.000000, 18.500000) rotate(-7.000000) translate(-5.000000, -18.500000) " x="2" y="9" width="6" height="19" rx="3"></rect>
+                        <rect id="Rectangle-9-Copy" fill="#25969B" transform="translate(61.000000, 18.500000) scale(-1, 1) rotate(-7.000000) translate(-61.000000, -18.500000) " x="58" y="9" width="6" height="19" rx="3"></rect>
+                    </g>
+                    <g id="Group-16-Copy" transform="translate(33.000000, 23.000000) scale(1, -1) translate(-33.000000, -23.000000) ">
+                        <rect id="Rectangle-8" fill="#1B535B" x="8" y="31" width="50" height="15" rx="3"></rect>
+                        <path d="M20.4332977,0 L45.5673927,-1.77635684e-15 C51.6425249,2.50346083e-15 56.5673927,4.92486775 56.5673927,11 C56.5673927,11.4180321 56.543563,11.8357243 56.4960197,12.2510439 L54.8830635,26.3411938 C54.7096412,27.8561432 53.4273721,29 51.9025289,29 L14.0981615,29 C12.5733183,29 11.2910492,27.8561432 11.1176268,26.3411938 L9.50467063,12.2510439 C8.81373814,6.21532989 13.1465397,0.762305451 19.1822537,0.0713729571 C19.5975734,0.0238296401 20.0152656,-1.69956559e-15 20.4332977,-1.77635684e-15 Z" id="Rectangle-8-Copy" fill="#4AD0CA"></path>
+                        <rect id="Rectangle-9" fill="#25969B" transform="translate(5.000000, 18.500000) rotate(-7.000000) translate(-5.000000, -18.500000) " x="2" y="9" width="6" height="19" rx="3"></rect>
+                        <rect id="Rectangle-9-Copy" fill="#25969B" transform="translate(61.000000, 18.500000) scale(-1, 1) rotate(-7.000000) translate(-61.000000, -18.500000) " x="58" y="9" width="6" height="19" rx="3"></rect>
+                    </g>
+                </g>
+                <g id="Group-17" transform="translate(232.000000, 232.000000) rotate(-135.000000) translate(-232.000000, -232.000000) translate(199.000000, 0.000000)">
+                    <g id="Group-16" transform="translate(0.000000, 418.000000)">
+                        <rect id="Rectangle-8" fill="#1B535B" x="8" y="31" width="50" height="15" rx="3"></rect>
+                        <path d="M20.4332977,0 L45.5673927,-1.77635684e-15 C51.6425249,2.50346083e-15 56.5673927,4.92486775 56.5673927,11 C56.5673927,11.4180321 56.543563,11.8357243 56.4960197,12.2510439 L54.8830635,26.3411938 C54.7096412,27.8561432 53.4273721,29 51.9025289,29 L14.0981615,29 C12.5733183,29 11.2910492,27.8561432 11.1176268,26.3411938 L9.50467063,12.2510439 C8.81373814,6.21532989 13.1465397,0.762305451 19.1822537,0.0713729571 C19.5975734,0.0238296401 20.0152656,-1.69956559e-15 20.4332977,-1.77635684e-15 Z" id="Rectangle-8-Copy" fill="#4AD0CA"></path>
+                        <rect id="Rectangle-9" fill="#25969B" transform="translate(5.000000, 18.500000) rotate(-7.000000) translate(-5.000000, -18.500000) " x="2" y="9" width="6" height="19" rx="3"></rect>
+                        <rect id="Rectangle-9-Copy" fill="#25969B" transform="translate(61.000000, 18.500000) scale(-1, 1) rotate(-7.000000) translate(-61.000000, -18.500000) " x="58" y="9" width="6" height="19" rx="3"></rect>
+                    </g>
+                    <g id="Group-16-Copy" transform="translate(33.000000, 23.000000) scale(1, -1) translate(-33.000000, -23.000000) ">
+                        <rect id="Rectangle-8" fill="#1B535B" x="8" y="31" width="50" height="15" rx="3"></rect>
+                        <path d="M20.4332977,0 L45.5673927,-1.77635684e-15 C51.6425249,2.50346083e-15 56.5673927,4.92486775 56.5673927,11 C56.5673927,11.4180321 56.543563,11.8357243 56.4960197,12.2510439 L54.8830635,26.3411938 C54.7096412,27.8561432 53.4273721,29 51.9025289,29 L14.0981615,29 C12.5733183,29 11.2910492,27.8561432 11.1176268,26.3411938 L9.50467063,12.2510439 C8.81373814,6.21532989 13.1465397,0.762305451 19.1822537,0.0713729571 C19.5975734,0.0238296401 20.0152656,-1.69956559e-15 20.4332977,-1.77635684e-15 Z" id="Rectangle-8-Copy" fill="#4AD0CA"></path>
+                        <rect id="Rectangle-9" fill="#25969B" transform="translate(5.000000, 18.500000) rotate(-7.000000) translate(-5.000000, -18.500000) " x="2" y="9" width="6" height="19" rx="3"></rect>
+                        <rect id="Rectangle-9-Copy" fill="#25969B" transform="translate(61.000000, 18.500000) scale(-1, 1) rotate(-7.000000) translate(-61.000000, -18.500000) " x="58" y="9" width="6" height="19" rx="3"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Directions" transform="translate(62.000000, 60.000000)" fill="#A5E7E5" font-family="ProximaNova-Extrabld, Proxima Nova" font-size="18" font-weight="600">
+                <text id="N">
+                    <tspan x="162" y="18">N</tspan>
+                </text>
+                <text id="E">
+                    <tspan x="323" y="177">E</tspan>
+                </text>
+                <text id="S">
+                    <tspan x="162" y="339">S</tspan>
+                </text>
+                <text id="W">
+                    <tspan x="0" y="177">W</tspan>
+                </text>
+            </g>
+            <g id="Compass-points" transform="translate(113.000000, 114.000000)" fill="#20757B">
+                <g id="Group-11">
+                    <polygon id="Triangle" points="118 0 130 118 106 118"></polygon>
+                    <polygon id="Triangle" transform="translate(118.000000, 177.000000) scale(1, -1) translate(-118.000000, -177.000000) " points="118 118 130 236 106 236"></polygon>
+                    <g id="Group-14" transform="translate(118.000000, 118.000000) rotate(-270.000000) translate(-118.000000, -118.000000) translate(106.000000, 0.000000)">
+                        <polygon id="Triangle" points="12 0 24 118 0 118"></polygon>
+                        <polygon id="Triangle" points="12 236 24 118 0 118"></polygon>
+                    </g>
+                </g>
+                <g id="Group-11" transform="translate(118.500000, 118.000000) rotate(-45.000000) translate(-118.500000, -118.000000) translate(45.000000, 45.000000)">
+                    <polygon id="Triangle" points="73.5 0 81 73 66 73"></polygon>
+                    <polygon id="Triangle" transform="translate(73.500000, 109.500000) scale(1, -1) translate(-73.500000, -109.500000) " points="73.5 73 81 146 66 146"></polygon>
+                    <g id="Group-14" transform="translate(73.500000, 73.000000) rotate(-270.000000) translate(-73.500000, -73.000000) translate(66.000000, 0.000000)">
+                        <polygon id="Triangle" points="7.5 0 15 73 0 73"></polygon>
+                        <polygon id="Triangle" points="7.5 146 15 73 0 73"></polygon>
+                    </g>
+                </g>
+            </g>
+            <g id="compass-needle" transform="translate(231.000000, 232.000000) rotate(19.000000) translate(-231.000000, -232.000000) translate(215.000000, 71.000000)">
+                <g id="Combined-Shape" fill="black" fill-opacity="1">
+                    <use filter="url(#filter-6)" xlink:href="#path-5"></use>
+                </g>
+                <polygon id="Triangle" fill="#908CC0" points="16 322 -4.26325641e-14 161 32 161"></polygon>
+                <polygon id="Triangle" fill="#E3E2EF" points="16 7.06990022e-13 32 161 -3.47277762e-13 161"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

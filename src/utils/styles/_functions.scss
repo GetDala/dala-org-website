@@ -1,0 +1,5 @@
+@import './design-system';
+
+@function gridbase-multiplier($multiplier) {
+  @return $multiplier * $layout-vertical-rhythm;
+}
