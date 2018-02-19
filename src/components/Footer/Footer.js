@@ -42,7 +42,7 @@ class Footer extends Component {
               Timeline
             </Link>
             <Link to="pageTokenSale" smooth activeClass={'active-footer-link'}>
-              ICO
+              Token Sale
             </Link>
           </div>
         </nav>

@@ -6,8 +6,6 @@ import './AboutDala.css';
 // images
 import IsometricMap from './images/IsometricMap/IsometricMap';
 
-// components
-
 class AboutDala extends Component {
 
   render() {

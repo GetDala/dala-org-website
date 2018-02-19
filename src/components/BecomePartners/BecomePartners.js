@@ -16,7 +16,7 @@ class BecomePartners extends Component {
          <div className="columns is-desktop">
            <div className="column partners-content has-text-centered is-flex-desktop">
              <h1>Interested in Becoming<br />a Dala Partner?</h1>
-             <p>Get in touch with us today!</p>
+             <p>Get in touch with us today at info@getwala.com!</p>
              <div className="call-to-action-wrapper">
                <CallToAction
                  variation={'mail'}

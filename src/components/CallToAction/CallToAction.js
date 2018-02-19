@@ -5,28 +5,21 @@ import Scroll from 'react-scroll';
 // styles
 import './CallToAction.css';
 
-var scroller = Scroll.animateScroll;
 var Link = Scroll.Link;
 
 class CallToAction extends Component {
   render() {
     const { variation, onClick, destination, helperClasses, label } = this.props;
+    let CTA = null;
 
     switch(variation) {
-      case 'anchor':
-        return (
-          <a href={this.props.destination} className={["call-to-action-btn", this.props.helperClasses].join(' ')} target="_blank" rel="noopener noreferrer">
-            {label}
-          </a>
-        );
-        break;
       case 'mail':
         let coded = "lMnK@wMunFK8MDDMKKt.ktl";
         let key = "1DtzZ8TGBuhRjJMKWI4gkUF2qidfOyPmSN7X30Vpso6xvErLnwQCbalA95HcYe";
         let shift = coded.length;
         let link = this.props.destination;
         for (let i=0; i<coded.length; i++) {
-          if (key.indexOf(coded.charAt(i))==-1) {
+          if (key.indexOf(coded.charAt(i)) ===- 1) {
             let ltr = coded.charAt(i);
             link += (ltr)
           }
@@ -35,27 +28,45 @@ class CallToAction extends Component {
             link += (key.charAt(ltr));
           }
         }
-        return (
-          <a href={'mailto:' + link} className={["call-to-action-btn", this.props.helperClasses].join(' ')} rel="noopener noreferrer">
+        CTA = <a
+          href={'mailto:' + link}
+          className={["call-to-action-btn", this.props.helperClasses].join(' ')}
+          rel="noopener noreferrer">
             {label}
           </a>
-        );
+        ;
         break;
       case 'button':
-        return (
-          <button className={["call-to-action-btn", this.props.helperClasses].join(' ')} onClick={() => {onClick();} }>
+        CTA = <button
+          className={["call-to-action-btn", this.props.helperClasses].join(' ')}
+          onClick={() => {onClick();} }>
             {label}
           </button>
-        );
+        ;
         break;
       case 'scroll':
-        return (
-          <Link className={['call-to-action-btn', helperClasses].join(' ')} to={destination} smooth>
+        CTA = <Link
+          className={['call-to-action-btn', helperClasses].join(' ')}
+          to={destination}
+          smooth>
             {label}
           </Link>
-        );
+        ;
+        break;
+      default:
+      case 'anchor':
+        CTA = <a
+          href={this.props.destination}
+          className={["call-to-action-btn", this.props.helperClasses].join(' ')}
+          target="_blank"
+          rel="noopener noreferrer">
+            {label}
+          </a>
+        ;
         break;
     }
+
+    return(CTA);
   }
 }
 
@@ -63,7 +74,8 @@ CallToAction.propTypes = {
   variation: PropTypes.oneOf([
     'anchor',
     'button',
-    'scroll'
+    'scroll',
+    'mail'
   ]).isRequired,
   onClick: PropTypes.func,
   destination: PropTypes.string,

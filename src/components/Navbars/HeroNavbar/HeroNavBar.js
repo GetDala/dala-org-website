@@ -45,7 +45,7 @@ class HeroNavBar extends Component {
             Timeline
           </Link>
           <Link className="hero-navbar-right-link" to="pageTokenSale" smooth>
-            ICO
+            Token Sale
           </Link>
           <CallToAction
             variation={'scroll'}

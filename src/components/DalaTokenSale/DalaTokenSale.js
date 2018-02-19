@@ -26,7 +26,7 @@ class DalaTokenSale extends Component {
           <div className="columns">
             <div className="column is-8 is-offset-2">
               <p>
-                The Dala token sale successfully concluded in December 2017 and Wala immediately began integration. Dala token holders have access to a backers Telegram channel where they are able to engage with the Dala Foundation and with Wala. All official Wala and Dala Foundation announcements are posted to this channel to ensure that token sale backers remain informed about the progress of the Dala ecosystem rollout.
+                The Dala token sale successfully sold a limited release of Dala tokens during December 2017 and Wala immediately began integration. Dala token holders have access to a backers Telegram channel where they are able to engage with the Dala Foundation and with Wala. All official Wala and Dala Foundation announcements are posted to this channel to ensure that token sale backers remain informed about the progress of the Dala ecosystem rollout.
               </p>
             </div>
           </div>

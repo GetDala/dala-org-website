@@ -38,7 +38,7 @@ class ProductTimeline extends Component {
                       <img src={DalaTokenBlank} alt="" />
                       <span>OCT<br />2017</span>
                     </div>
-                    <div className="timeline-content"><span>Wala annouces the issuance of a crypto-token that enables zero-fee and instantaneous micro transactions for the masses.</span></div>
+                    <div className="timeline-content"><span>Dala Foundation annouces the issuance of a crypto-token that enables zero-fee and instantaneous micro transactions for the masses.</span></div>
                   </li>
                   <li className="is-clearfix is-flex-desktop">
                     <div className="timeline-date add-dash">

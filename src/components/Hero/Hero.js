@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Scroll from 'react-scroll';
 
 // styles
 import './Hero.css';
@@ -6,20 +7,14 @@ import './Hero.css';
 // images
 import LearnMoreChevron from './images/LearnMoreChevron/LearnMoreChevron';
 
-//functions
-//import { animateHero } from './animation';
-
 // components
 import DalaWordmark from './images/DalaWordmark/DalaWordmark';
 import DalaCubeAnimation from './images/DalaCubeAnimation/DalaCubeAnimation';
-//import DalaBorderlessBlock from './images/DalaBorderlessLogo/DalaBorderlessLogo';
 import HeroNavbar from '../Navbars/HeroNavbar/HeroNavBar';
 
-class Hero extends Component {
+var Link = Scroll.Link;
 
-  componentDidMount() {
-    //animateHero();
-  }
+class Hero extends Component {
 
   render() {
     return (
@@ -33,11 +28,12 @@ class Hero extends Component {
           <h1 className="hero-h1">Enabling zero-fee, instant, and borderless micropayments</h1>
           <h2 className="hero-h2">Designed to include 3.5 billion people in the formal financial system</h2>
           <div className="learn-more">
-            <span>Learn More</span>
-            <LearnMoreChevron/>
+            <Link to="pageAboutDala" smooth>
+              <span>Learn More</span>
+              <LearnMoreChevron/>
+            </Link>
           </div>
         </div>
-        {/* <div className="hero-cover"></div> */}
       </section>
     );
   }
