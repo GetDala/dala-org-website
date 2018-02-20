@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 // styles
 import './ProductTimeline.css';
 
 // images
 import PhonePlaceholder from './images/Device Placeholder.png';
 import DalaTokenBlank from './images/token.svg';
-
-// components
+import videoWebm from './video/final_trim.webm';
+import videoOgv from './video/final_trim.ogv';
+import videoMp4 from './video/final_trim.mp4';
+import videoMov from './video/final_trim.mov';
 
 class ProductTimeline extends Component {
   render() {
@@ -28,36 +30,47 @@ class ProductTimeline extends Component {
             <div className="columns is-desktop">
               <div className="column is-half-desktop phone-flex is-flex-desktop">
                 <div className="phone-wrapper">
-                  <img src={PhonePlaceholder} alt="" />
+                  <div className="video-wrapper">
+                    <video width="100%" height="100%" autoPlay preload="auto" loop>
+                      <source src={videoWebm} type="video/webm"/>
+                      <source src={videoOgv} type="video/ogv"/>
+                      <source src={videoMp4} type="video/mp4"/>
+                      <source src={videoMov} type="video/mov"/>
+                    </video>
+                  </div>
+                  <img src={PhonePlaceholder} alt=""/>
                 </div>
               </div>
               <div className="column is-half-desktop">
                 <ul className="timeline">
                   <li className="is-clearfix is-flex-desktop">
                     <div className="timeline-date add-dash">
-                      <img src={DalaTokenBlank} alt="" />
-                      <span>OCT<br />2017</span>
+                      <img src={DalaTokenBlank} alt=""/>
+                      <span>OCT<br/>2017</span>
                     </div>
-                    <div className="timeline-content"><span>Dala Foundation annouces the issuance of a crypto-token that enables zero-fee and instantaneous micro transactions for the masses.</span></div>
+                    <div className="timeline-content"><span>Dala Foundation annouces the issuance of a crypto-token that enables zero-fee and instantaneous micro transactions for the masses.</span>
+                    </div>
                   </li>
                   <li className="is-clearfix is-flex-desktop">
                     <div className="timeline-date add-dash">
-                      <img src={DalaTokenBlank} alt="" />
-                      <span>DEC<br />2017</span>
+                      <img src={DalaTokenBlank} alt=""/>
+                      <span>DEC<br/>2017</span>
                     </div>
-                    <div className="timeline-content"><span>Dala Token sale successfully closes and Wala begins integration.</span></div>
+                    <div className="timeline-content"><span>Dala Token sale successfully closes and Wala begins integration.</span>
+                    </div>
                   </li>
                   <li className="is-clearfix is-flex-desktop">
                     <div className="timeline-date add-dash">
-                      <span>Q1<br />2018</span>
-                      <img src={DalaTokenBlank} alt="" />
+                      <span>Q1<br/>2018</span>
+                      <img src={DalaTokenBlank} alt=""/>
                     </div>
-                    <div className="timeline-content"><span>Launch Dala wallet with functionality to earn, redeeem, and transact with Dala.<br /><br />Expand the Dala ecosystem through enterprise partnerships.</span></div>
+                    <div className="timeline-content"><span>Launch Dala wallet with functionality to earn, redeeem, and transact with Dala.<br/><br/>Expand the Dala ecosystem through enterprise partnerships.</span>
+                    </div>
                   </li>
                   <li className="is-clearfix is-flex-desktop">
                     <div className="timeline-date">
-                      <span>Q2<br />2018</span>
-                      <img src={DalaTokenBlank} alt="" />
+                      <span>Q2<br/>2018</span>
+                      <img src={DalaTokenBlank} alt=""/>
                     </div>
                     <div className="timeline-content"><span>Release Dala Enterprise rewards engine.</span></div>
                   </li>

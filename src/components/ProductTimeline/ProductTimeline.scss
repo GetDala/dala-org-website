@@ -135,6 +135,38 @@
   .phone-wrapper {
     text-align: center;
     overflow-x: hidden;
+    position: relative;
+
+    .video-wrapper {
+      position: absolute;
+      top: 72px;
+      bottom: 90px;
+      z-index: 10;
+      left: 50%;
+      margin-left: -1px;
+      width: 277px;
+      height: 486px;
+
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+
+      @media screen and (min-width: $desktop) {
+        left: 18px;
+        right: 20px;
+        width: auto;
+        height: auto;
+        margin-left: 0;
+
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+      }
+    }
   }
   .phone-flex {
     @media screen and (min-width: $desktop) {
