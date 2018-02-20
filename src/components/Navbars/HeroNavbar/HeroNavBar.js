@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Scroll from 'react-scroll';
+import Headroom from 'react-headroom';
 
 // styles
 import './HeroNavBar.css';
@@ -22,39 +23,41 @@ class HeroNavBar extends Component {
 
   render() {
     return (
-      <nav className="navbar hero-navbar">
-        <div className="navbar-brand">
-          <a href="#!" className="hero-navbar-brand-link">
-            <img src={DalaHexagon} className="brand-logo" alt="Dala Hexagon Logo" /> <img alt="" src={DalaLogomark} className="brand-logomark" />
-          </a>
-        </div>
-        <div className="navbar-end">
-          <Link className="hero-navbar-right-link" to="pageAboutDala" smooth>
-            About Us
-          </Link>
-          <Link className="hero-navbar-right-link" to="pageDalaEcosystem" smooth>
-            Ecosystem
-          </Link>
-          <Link className="hero-navbar-right-link" to="pageRewardsEngine" smooth>
-            Rewards
-          </Link>
-          <Link className="hero-navbar-right-link" to="pageDalaGovernance" smooth>
-            Governance
-          </Link>
-          <Link className="hero-navbar-right-link" to="pageDalaProductTimeline" smooth>
-            Timeline
-          </Link>
-          <Link className="hero-navbar-right-link" to="pageTokenSale" smooth>
-            Token Sale
-          </Link>
-          <CallToAction
-            variation={'scroll'}
-            label={'Partner With Us'}
-            destination={'pageBecomePartners'}
-            helperClasses={['navbar-cta']}
-          />
-        </div>
-      </nav>
+      <Headroom disableInlineStyles>
+        <nav className="navbar hero-navbar">
+          <div className="navbar-brand">
+            <a href="#!" className="hero-navbar-brand-link">
+              <img src={DalaHexagon} className="brand-logo" alt="Dala Hexagon Logo" /> <img alt="" src={DalaLogomark} className="brand-logomark" />
+            </a>
+          </div>
+          <div className="navbar-end">
+            <Link className="hero-navbar-right-link" to="pageAboutDala" smooth>
+              About Us
+            </Link>
+            <Link className="hero-navbar-right-link" to="pageDalaEcosystem" smooth>
+              Ecosystem
+            </Link>
+            <Link className="hero-navbar-right-link" to="pageRewardsEngine" smooth>
+              Rewards
+            </Link>
+            <Link className="hero-navbar-right-link" to="pageDalaGovernance" smooth>
+              Governance
+            </Link>
+            <Link className="hero-navbar-right-link" to="pageDalaProductTimeline" smooth>
+              Timeline
+            </Link>
+            <Link className="hero-navbar-right-link" to="pageTokenSale" smooth>
+              Token Sale
+            </Link>
+            <CallToAction
+              variation={'scroll'}
+              label={'Partner With Us'}
+              destination={'pageBecomePartners'}
+              helperClasses={['navbar-cta']}
+            />
+          </div>
+        </nav>
+      </Headroom>
     );
   }
 }

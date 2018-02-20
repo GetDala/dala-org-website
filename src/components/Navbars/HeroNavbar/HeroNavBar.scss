@@ -1,8 +1,43 @@
 @import '../../../utils/styles/all';
 
+.hero-head {
+  @include setFixed($top: 0, $left: 0, $right: 0);
+
+  height: 78px;
+  z-index: 1000;
+
+  .headroom {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    @include transition(background, 0.2s);
+  }
+  .headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+    @include transition(background, 0.2s);
+  }
+  .headroom--scrolled {
+    transition: transform 200ms ease-in-out;
+  }
+  .headroom--unpinned {
+    position: fixed;
+    transform: translateY(0%);
+    background: rgba($color-scampipurple-shade1, 0.8);
+    @include transition(background, 0.2s);
+  }
+  .headroom--pinned {
+    position: fixed;
+    transform: translateY(0%);
+    background: rgba($color-scampipurple-shade1, 0.8);
+    @include transition(background, 0.2s);
+  }
+}
 .hero-navbar {
   border-bottom: 1px solid $color-scampipurple-tint2;
   margin: 0 36px;
+  background: transparent;
 
   .hero-navbar-brand-link {
     padding-top: gridbase-multiplier(1);

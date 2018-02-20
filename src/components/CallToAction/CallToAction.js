@@ -14,22 +14,8 @@ class CallToAction extends Component {
 
     switch(variation) {
       case 'mail':
-        let coded = "lMnK@wMunFK8MDDMKKt.ktl";
-        let key = "1DtzZ8TGBuhRjJMKWI4gkUF2qidfOyPmSN7X30Vpso6xvErLnwQCbalA95HcYe";
-        let shift = coded.length;
-        let link = this.props.destination;
-        for (let i=0; i<coded.length; i++) {
-          if (key.indexOf(coded.charAt(i)) ===- 1) {
-            let ltr = coded.charAt(i);
-            link += (ltr)
-          }
-          else {
-            let ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length;
-            link += (key.charAt(ltr));
-          }
-        }
         CTA = <a
-          href={'mailto:' + link}
+          href={'mailto:' + this.props.destination}
           className={["call-to-action-btn", this.props.helperClasses].join(' ')}
           rel="noopener noreferrer">
             {label}

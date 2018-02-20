@@ -21,7 +21,7 @@
   .section-content {
     .main-content {
       position: relative;
-      overflow-x: hidden;
+      overflow: hidden;
     }
     .main-content:before {
       background: $color-scampipurple-shade1;
