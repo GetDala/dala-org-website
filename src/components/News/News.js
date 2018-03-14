@@ -90,6 +90,17 @@ class News extends Component {
           </div>
         </div>
         <Slider className="articles" {...settings} ref={c => this.slider = c}>
+          <div className="article-slide" onClick={() => {this.openLink('https://www.cnbcafrica.com/videos/2018/02/22/bitcoin-is-a-victim-of-its-own-success-wala-ceo/')}}>
+            <div className="article-image"
+                 style={{backgroundImage: 'url(https://cdn.cnbcafrica.com/wp-content/uploads/2018/02/22170245/1571595826001_5738532684001_5738516037001-vs-356x220.jpeg'}}></div>
+            <div className="article-details">
+              <div className="article-source">CNBC Africa</div>
+              <h3 className="article-headline">Bitcoin is a victim of its own success – Wala CEO</h3>
+              <a rel="noopener noreferrer" className="article-link" target="_blank"
+                 href="https://www.cnbcafrica.com/videos/2018/02/22/bitcoin-is-a-victim-of-its-own-success-wala-ceo/">Read
+                Article</a>
+            </div>
+          </div>
           <div className="article-slide" onClick={() => {this.openLink('https://www.cnbcafrica.com/apo/2017/12/07/can-cryptocurrencies-reduce-global-poverty/')}}>
             <div className="article-image"
                  style={{backgroundImage: 'url(https://cdn.cnbcafrica.com/wp-content/uploads/2017/10/09155553/apo_logo-768x461.png'}}></div>
