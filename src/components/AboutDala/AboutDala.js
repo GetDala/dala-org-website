@@ -19,7 +19,7 @@ class AboutDala extends Component {
                   About Dala
                 </h2>
                 <h3 className="section-description">
-                  To enable a near-free and borderless financial system for emerging market consumers, a new crypto-token, Dala, was issued by the Dala Foundation.
+                  To enable a borderless financial system for emerging market consumers, a new crypto-token, Dala, was issued by the Dala Foundation.
                 </h3>
               </header>
             </div>
