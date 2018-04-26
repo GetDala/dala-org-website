@@ -90,6 +90,16 @@ class News extends Component {
           </div>
         </div>
         <Slider className="articles" {...settings} ref={c => this.slider = c}>
+          <div className="article-slide" onClick={() => {this.openLink('https://www.facebook.com/FastCompany/videos/10155475899464077/')}}>
+            <div className="article-image"
+                 style={{backgroundImage: 'url(https://images.fastcompany.net/image/upload/v1480632834/fast-company-share-graphic.png'}}></div>
+            <div className="article-details">
+              <div className="article-source">Fast Company</div>
+              <h3 className="article-headline">Interview with Wala CEO Tricia Martinez</h3>
+              <a rel="noopener noreferrer" className="article-link" target="_blank"
+                 href="https://www.facebook.com/FastCompany/videos/10155475899464077/">Watch Video</a>
+            </div>
+          </div>
           <div className="article-slide" onClick={() => {this.openLink('https://www.cnbcafrica.com/videos/2018/02/22/bitcoin-is-a-victim-of-its-own-success-wala-ceo/')}}>
             <div className="article-image"
                  style={{backgroundImage: 'url(https://cdn.cnbcafrica.com/wp-content/uploads/2018/02/22170245/1571595826001_5738532684001_5738516037001-vs-356x220.jpeg'}}></div>

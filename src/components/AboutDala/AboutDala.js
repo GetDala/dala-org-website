@@ -5,6 +5,7 @@ import './AboutDala.css';
 
 // images
 import IsometricMap from './images/IsometricMap/IsometricMap';
+import CallToAction from '../CallToAction/CallToAction';
 
 class AboutDala extends Component {
 
@@ -27,17 +28,49 @@ class AboutDala extends Component {
         </div>
         <div className="container">
           <div className="section-content">
-            <div className="columns is-desktop">
-              <div className="column float-on-desktop">
-                <p>
-                  The Dala utility token is a general-purpose ERC-20 cryptographic token developed by the Dala Foundation and issued on the public Ethereum blockchain. The token is fractionally divisible and is independent of all local currencies and cryptocurrencies. Consumers will be able to engage in the Dala ecosystem by making transfers using their own token wallets, via the Wala Financial Platform (Dala's launch partner), or through other applications built using the Dala API.
-                </p>
-                <p>
-                  The Dala Foundation is a private exempted company incorporated in the Cayman Islands and is intended to become a fully-decentralized autonomous organization (known as a DAO). However, due to the infancy of the crypto governance space, the Dala Foundation will assist with providing a governance forum, administer and maintain the Dala token economy in the short-term.
-                </p>
-              </div>
-              <div className="column is-offset-5-desktop is-7-desktop is-offset-4-widescreen is-8-widescreen">
-                <IsometricMap/>
+            <div className="columns is-desktop remove-padding">
+              <div className="column">
+                <div className="columns is-desktop">
+                  <div className="column float-on-desktop">
+                    <p>
+                      The Dala utility token is a general-purpose ERC-20 cryptographic token developed by the Dala Foundation and issued on the public Ethereum blockchain. The token is fractionally divisible and is independent of all local currencies and cryptocurrencies. Consumers will be able to engage in the Dala ecosystem by making transfers using their own token wallets, via the Wala Financial Platform (Dala's launch partner), or through other applications built using the Dala API.
+                    </p>
+                    <p>
+                      The Dala Foundation is a private exempted company incorporated in the Cayman Islands and is intended to become a fully-decentralized autonomous organization (known as a DAO). However, due to the infancy of the crypto governance space, the Dala Foundation will assist with providing a governance forum, administer and maintain the Dala token economy in the short-term.
+                    </p>
+                  </div>
+                  <div className="column is-offset-5-desktop is-7-desktop is-offset-4-widescreen is-8-widescreen">
+                    <IsometricMap/>
+                  </div>
+                </div>
+                <div className="columns is-desktop ecosystem-learn-more is-flex-desktop remove-padding">
+                  <div className="column is-two-fifths-desktop">
+                    <span className="ecosystem-learn-more-content">Smart Contract Details</span>
+                  </div>
+                  <div className="column is-half-desktop is-three-fifths-desktop ecosystem-links has-text-right-desktop">
+                    <span className="about-dala-cta">
+                      <CallToAction
+                        variation={'anchor'}
+                        destination={'https://github.com/GetDala/dala-smart-contracts'}
+                        label={'Smart Contract'}
+                      />
+                    </span>
+                    <span className="about-dala-cta">
+                      <CallToAction
+                        variation={'anchor'}
+                        destination={'https://www.iosiro.com/dala-token-sale-audit'}
+                        label={'Smart Contract Audit'}
+                      />
+                    </span>
+                    <span className="about-dala-cta">
+                      <CallToAction
+                        variation={'anchor'}
+                        destination={'https://etherscan.io/token/0xa87c3ec87eb802aad080df0adb331e504d327e5d'}
+                        label={'Token Contract Address'}
+                      />
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

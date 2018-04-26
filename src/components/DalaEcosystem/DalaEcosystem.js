@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 // styles
 import './DalaEcosystem.css';
 
@@ -26,6 +27,13 @@ class DalaEcosystem extends Component {
                   Dala is designed to bring 3.5 billion underserved consumers into the formal financial system.
                 </h3>
               </header>
+            </div>
+          </div>
+        </div>
+        <div className="container has-text-centered">
+          <div className="video-wrapper">
+            <div className="video-container">
+              <iframe className="video" frameBorder="0" allowFullScreen="1" allow="autoplay; encrypted-media" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/BSC-AqZlx1k?enablejsapi=1&amp;origin=http%3A%2F%2Flocalhost%3A3000&amp;widgetid=1" id="widget2"></iframe>
             </div>
           </div>
         </div>
@@ -63,20 +71,38 @@ class DalaEcosystem extends Component {
                   </div>
                 </div>
                 <div className="columns is-desktop ecosystem-learn-more is-flex-desktop">
-                  <div className="column is-half-desktop">
+                  <div className="column is-two-fifths-desktop">
                     <span className="ecosystem-learn-more-content">Learn More about Dala &amp; Wala</span>
                   </div>
-                  <div className="column is-half-desktop ecosystem-links has-text-right-desktop">
-                    <CallToAction
-                      variation={'anchor'}
-                      destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dala_lite_paper.pdf'}
-                      label={'Read Lite Paper'}
-                    />
-                    <CallToAction
-                      variation={'anchor'}
-                      destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dalawhitepaper.pdf'}
-                      label={'Read Whitepaper'}
-                    />
+                  <div className="column is-three-fifths-desktop ecosystem-links has-text-right-desktop">
+                    <span className="ecosystem-cta">
+                      <CallToAction
+                        variation={'anchor'}
+                        destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dalawhitepaper.pdf'}
+                        label={'Whitepaper'}
+                      />
+                    </span>
+                    <span className="ecosystem-cta">
+                      <CallToAction
+                        variation={'anchor'}
+                        destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dala_lite_paper.pdf'}
+                        label={'Lite Paper'}
+                      />
+                    </span>
+                    <span className="ecosystem-cta">
+                      <CallToAction
+                        variation={'anchor'}
+                        destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dala_russian_lite_paper.pdf'}
+                        label={'Lite Paper (RUS)'}
+                      />
+                    </span>
+                    <span className="ecosystem-cta">
+                      <CallToAction
+                        variation={'anchor'}
+                        destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dala_japanese_lite_paper.pdf'}
+                        label={'Lite Paper (JPN)'}
+                      />
+                    </span>
                   </div>
                 </div>
               </div>
