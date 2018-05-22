@@ -32,9 +32,7 @@ class DalaTokenSale extends Component {
           </div>
           <div className="columns">
             <div className="column is-8 is-offset-2">
-              <div className="more-info">More information on the Dala Token Sale and Telegram</div>
-              <CallToAction variation="anchor" destination="https://tokensale.getwala.com/" label={'Token Website'} />
-              <span style={{display: 'inline-block', marginRight: 13}} />
+              <div className="more-info">More information on our Telegram</div>
               <CallToAction variation="anchor" destination="https://t.me/getwala" label="Telegram" />
             </div>
           </div>
