@@ -6,6 +6,8 @@ import './Footer.css';
 
 // images
 import DalaHexagon from '../Navbars/HeroNavbar/images/dalaHexagon.svg';
+import TwitterLogo from './twitter.svg';
+import WalaLogomark from './wala-teal-logomark.svg';
 
 // components
 
@@ -23,27 +25,20 @@ class Footer extends Component {
       <section id="Footer">
         <nav className="footer-nav level">
           <div className="level-left">
-            <img src={DalaHexagon} alt="" />
+            <Link to="home" smooth><img src={DalaHexagon} alt="" /></Link>
+            <div className="divider" />
+            <a href="https://getwala.com" target="_blank" className="wala-link"><img src={WalaLogomark} className="footer-logo" alt="" /></a>
+          </div>
+          <div className="level-item">
+            <a href="https://twitter.com/DalaFoundation" target="_blank" style={{marginLeft: 18}} rel="noopener noreferrer" ><img src={TwitterLogo} className="footer-logo" alt="" /></a>
           </div>
           <div className="level-right">
-            <Link to="pageAboutDala" smooth activeClass={'active-footer-link'}>
-              About Us
-            </Link>
-            <Link to="pageDalaEcosystem" smooth activeClass={'active-footer-link'}>
-              Ecosystem
-            </Link>
-            <Link to="pageRewardsEngine" smooth activeClass={'active-footer-link'}>
-              Rewards
-            </Link>
-            <Link to="pageDalaGovernance" smooth activeClass={'active-footer-link'}>
-              Governance
-            </Link>
-            <Link to="pageDalaProductTimeline" smooth activeClass={'active-footer-link'}>
-              Timeline
-            </Link>
-            <Link to="pageTokenSale" smooth activeClass={'active-footer-link'}>
-              Token Sale
-            </Link>
+            <a href="/terms" target="_blank" ref="noopener noreferrer" className="active-footer-link">
+              Terms &amp; Conditions
+            </a>
+            <a href="/privacypolicy" target="_blank" ref="noopener noreferrer" className="active-footer-link">
+              Privacy Policy
+            </a>
           </div>
         </nav>
         <div className="footer-legal has-text-centered">

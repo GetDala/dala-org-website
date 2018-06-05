@@ -26,9 +26,9 @@ class HeroNavBar extends Component {
       <Headroom disableInlineStyles>
         <nav className="navbar hero-navbar">
           <div className="navbar-brand">
-            <a href="#!" className="hero-navbar-brand-link">
+            <Link to="home" smooth className="hero-navbar-brand-link">
               <img src={DalaHexagon} className="brand-logo" alt="Dala Hexagon Logo" /> <img alt="" src={DalaLogomark} className="brand-logomark" />
-            </a>
+            </Link>
           </div>
           <div className="navbar-end">
             <Link className="hero-navbar-right-link" to="pageAboutDala" smooth>
