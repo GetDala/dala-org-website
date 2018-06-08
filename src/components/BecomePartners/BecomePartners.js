@@ -5,6 +5,7 @@ import './BecomePartners.css';
 // images
 
 // components
+import ReactGA from 'react-ga';
 import CallToAction from '../CallToAction/CallToAction';
 
 class BecomePartners extends Component {
@@ -18,11 +19,27 @@ class BecomePartners extends Component {
              <h1>Interested in Becoming<br />a Dala Partner?</h1>
              <p>Get in touch with us today at info@dala.org!</p>
              <div className="call-to-action-wrapper">
-               <CallToAction
-                 variation={'mail'}
-                 destination={'info@dala.org'}
-                 label={'Contact Us'}
-               />
+               {!this.props.legalSection ? (
+                 <CallToAction
+                   variation={'mail'}
+                   destination={'info@dala.org'}
+                   label={'Contact Us'}
+                   onClick={() => { ReactGA.event({
+                     category: 'Contact Us Button',
+                     action: 'launches email program'
+                   }); }}
+                 />
+               ) : (
+                 <CallToAction
+                   variation={'mail'}
+                   destination={'info@dala.org'}
+                   label={'Contact Us'}
+                   onClick={() => { ReactGA.event({
+                     category: 'Contact Us Button - Legal Section',
+                     action: 'launches email program'
+                   }); }}
+                 />
+               )}
              </div>
            </div>
          </div>

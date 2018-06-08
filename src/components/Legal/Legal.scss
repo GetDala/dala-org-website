@@ -1,0 +1,97 @@
+@import '../../utils/styles/all';
+
+.legal-section {
+  padding-top: gridbase-multiplier(9);
+  padding-bottom: gridbase-multiplier(2);
+
+  h1 {
+    @include banner;
+
+    color: $color-scampipurple-shade1;
+    padding-top: gridbase-multiplier(1);
+
+    @media screen and (max-width: 767px) {
+      font-size: 23px;
+      line-height: 37px;
+      padding-bottom: 9px;
+    }
+  }
+
+  h2 {
+    @include subheadline-two;
+
+    border-bottom: 4px solid $color-silver;
+    padding-bottom: gridbase-multiplier(2);
+    margin-bottom: gridbase-multiplier(2);
+  }
+
+  h3 {
+    @include headline;
+    color: $color-scampipurple-shade1;
+  }
+
+  p {
+    margin-bottom: gridbase-multiplier(1);
+  }
+
+  ol {
+    list-style-type: decimal;
+    margin: gridbase-multiplier(2) 0 gridbase-multiplier(2) 0;
+    padding: 0 0 0 72px;
+    font-family: 'proxima_nova_extrabold', sans-serif;
+    color:$color-scampipurple-shade1;
+
+    li span {
+      font-family: 'proxima_nova_semibold', sans-serif;
+      padding:8px 18px 8px 18px;
+      margin-left: 18px;
+      border-left: 4px solid $color-silver;
+      display: block;
+      color:$color-charcoal-base;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: gridbase-multiplier(2) 0 gridbase-multiplier(2) 0;
+    padding: 0 0 0 20px;
+    font-family: 'proxima_nova_extrabold', sans-serif;
+    color:$color-scampipurple-shade1;
+
+    li span {
+      font-family: 'proxima_nova_semibold', sans-serif;
+      padding:8px 18px 8px 18px;
+      margin-left: 18px;
+      display: block;
+      color:$color-charcoal-tint2;
+
+      em {
+        font-family: 'proxima_nova_extrabold', sans-serif;
+        color: $color-charcoal-base;
+        font-style: normal;
+      }
+    }
+  }
+
+  a {
+    color: $color-walateal-base;
+    border-bottom: 2px solid $color-walateal-tint2;
+  }
+
+  strong {
+    color: $color-charcoal-tint1;
+    font-family: 'proxima_nova_semibold', sans-serif;
+    font-weight: 400;
+  }
+
+  .dala-hexagon {
+    img {
+      height: gridbase-multiplier(7);
+    }
+  }
+  .dala-logotype {
+    img {
+      height: gridbase-multiplier(5);
+    }
+  }
+}

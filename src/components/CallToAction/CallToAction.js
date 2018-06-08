@@ -17,7 +17,7 @@ class CallToAction extends Component {
         CTA = <a
           href={'mailto:' + this.props.destination}
           className={["call-to-action-btn", this.props.helperClasses].join(' ')}
-          rel="noopener noreferrer">
+          rel="noopener noreferrer" onClick={() => {onClick();} }>
             {label}
           </a>
         ;
@@ -34,7 +34,7 @@ class CallToAction extends Component {
         CTA = <Link
           className={['call-to-action-btn', helperClasses].join(' ')}
           to={destination}
-          smooth>
+          smooth onClick={() => {onClick();} }>
             {label}
           </Link>
         ;
@@ -45,7 +45,7 @@ class CallToAction extends Component {
           href={this.props.destination}
           className={["call-to-action-btn", this.props.helperClasses].join(' ')}
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer" onClick={() => {onClick();} }>
             {label}
           </a>
         ;

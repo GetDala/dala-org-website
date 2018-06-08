@@ -6,8 +6,10 @@ import './News.css';
 
 // images
 import DefaultImage from '../Hero/images/headerBG1440.jpg';
+import TraderCobb from './tradercobb.jpg';
 
 // components
+import ReactGA from 'react-ga';
 
 class News extends Component {
 
@@ -68,7 +70,7 @@ class News extends Component {
     const articles = [
       {
         url: 'https://www.youtube.com/watch?v=XUxBP0Nl3gw',
-        thumbnail: 'https://i.ytimg.com/vi_webp/XUxBP0Nl3gw/maxresdefault.webp',
+        thumbnail: TraderCobb,
         title: 'TraderCobb Interviews Tricia Martinez @ Consensus Blockchain Week – New York',
         source: 'TraderCobb',
         date: 'May 2018',
@@ -129,17 +131,105 @@ class News extends Component {
         source: 'BitcoinAfrica',
         date: 'Mar 2018',
         type: 'article'
+      },
+      {
+        url: 'https://www.facebook.com/FastCompany/videos/10155475899464077/',
+        thumbnail: 'https://images.fastcompany.net/image/upload/v1480632834/fast-company-share-graphic.png',
+        title: 'Interview with Wala CEO Tricia Martinez',
+        source: 'Fast Company',
+        type: 'video'
+      },
+      {
+        url: 'https://www.cnbcafrica.com/videos/2018/02/22/bitcoin-is-a-victim-of-its-own-success-wala-ceo/',
+        thumbnail: 'https://cdn.cnbcafrica.com/wp-content/uploads/2018/02/22170245/1571595826001_5738532684001_5738516037001-vs-356x220.jpeg',
+        title: 'Bitcoin is a victim of its own success – Wala CEO',
+        source: 'CNBC Africa',
+        type: 'article'
+      },
+      {
+        url: 'https://www.cnbcafrica.com/apo/2017/12/07/can-cryptocurrencies-reduce-global-poverty/',
+        thumbnail: 'https://cdn.cnbcafrica.com/wp-content/uploads/2017/10/09155553/apo_logo-768x461.png',
+        title: 'Can cryptocurrencies reduce global poverty?',
+        source: 'CNBC Africa',
+        type: 'article'
+      },
+      {
+        url: 'https://www.huffingtonpost.com/entry/can-blockchain-solve-the-prosperity-paradox_us_59edfa93e4b092f9f24193d2',
+        thumbnail: 'https://img.huffingtonpost.com/asset/59edfb2714000028008c92c1.jpg?ops=scalefit_820_noupscale',
+        title: 'Can Blockchain Solve The Prosperity Paradox?',
+        source: 'Huffington Post',
+        type: 'article'
+      },
+      {
+        url: 'https://www.coinspeaker.com/2017/10/04/newtown-partners-invests-blockchain-start-wala-solve-financial-exclusion-affecting-3-5bn-people/',
+        thumbnail: DefaultImage,
+        title: 'Newtown Partners Invests in Blockchain Start-Up Wala, To Solve Financial Exclusion Affecting 3.5bn People',
+        source: 'Coinspeaker',
+        type: 'article'
+      },
+      {
+        url: 'https://coinreviews.io/tricia-martinez-wala/',
+        thumbnail: 'https://coinreviews.io/wp-content/uploads/2017/10/tricia-martinez-wala.png',
+        title: 'Tricia Martinez – Wala, Founder & Chief Executive Officer',
+        source: 'Coin Reviews',
+        type: 'article'
+      },
+      {
+        url: 'https://ventureburn.com/2017/10/wala-investment-newtown-partners/',
+        thumbnail: 'https://ventureburn.com/wp-content/uploads/2017/10/Walateam1.jpg',
+        title: 'Fintech startup Wala secures equity investment from Newtown Partners',
+        source: 'Ventureburn',
+        type: 'article'
+      },
+      {
+        url: 'http://disrupt-africa.com/2017/11/sas-wala-partners-veridium-to-pilot-biometric-banking-authentication/',
+        thumbnail: 'http://disrupt-africa.com/wp-content/uploads/2017/10/Wala-1-702x336.jpg',
+        title: 'SA\'s Wala partners Veridium to pilot biometric banking authentication',
+        source: 'Disrupt Africa',
+        type: 'article'
+      },
+      {
+        url: 'https://www.finextra.com/pressarticle/71234/m-vendr-to-accept-wala-digital-currency-at-mpos',
+        thumbnail: 'http://mvendr.com/img/home.png',
+        title: 'M-vendr to accept Wala digital currency at mPOS',
+        source: 'Finextra',
+        type: 'article'
+      },
+      {
+        url: 'https://www.fincaimpact.com/news-insights/finca-and-wala-offer-innovative-mobile-financial-services/',
+        thumbnail: 'https://www.fincaimpact.com/wp-content/uploads/2017/10/mobile-Africa.jpg',
+        title: 'Universal and Affordable Financial Services are Possible – Only Through Collaboration',
+        source: 'Finca Impact Finance',
+        type: 'article'
+      },
+      {
+        url: 'https://ventureburn.com/2017/10/wala-financial-exclusion-emerging-markets/',
+        thumbnail: 'https://ventureburn.com/wp-content/uploads/2017/10/wala-ceo-tricia-martinez.jpg',
+        title: 'Q&A: Wala CEO on tackling financial exclusion in emerging markets',
+        source: 'Ventureburn',
+        type: 'article'
+      },
+      {
+        url: 'https://www.investitin.com/wala/',
+        thumbnail: DefaultImage,
+        title: 'Dala: A social model to bank the unbanked',
+        source: 'InvestItIn',
+        type: 'article'
       }
     ];
 
     const slides = articles.map((slide, idx) => {
       return(
         <div key={idx} className="article-slide" onClick={() => {
-          this.openLink(slide.url)
+          this.openLink(slide.url);
+          ReactGA.event({
+            category: 'News Link:' + slide.source,
+            action: slide.title
+          });
         }}>
           <div className="article-image" style={{backgroundImage: `url(${slide.thumbnail})`}} />
           <div className="article-details">
-            <div className="article-source">{slide.source} - {slide.date}</div>
+            <div className="article-source">{slide.source}{slide.date ? ' - ' + slide.date : null}</div>
             <h3 className="article-headline">{slide.title}</h3>
             <a rel="noopener noreferrer" className="article-link" target="_blank" href={slide.url}>{slide.type === 'article' ? 'Read Article' : 'Watch Video'}</a>
           </div>
@@ -166,7 +256,7 @@ class News extends Component {
             <div className="column is-8 is-offset-2">
               <header className="section-header has-text-centered">
                 <h2 className="section-title">
-                  In The News
+                  In The News <sup style={{fontSize: 16, color: '#746fb0'}}>({slides.length})</sup>
                 </h2>
               </header>
             </div>
@@ -174,159 +264,6 @@ class News extends Component {
         </div>
         <Slider className="articles" {...settings} ref={c => this.slider = c}>
           {slides}
-          <div className="article-slide" onClick={() => {
-            this.openLink('https://www.facebook.com/FastCompany/videos/10155475899464077/')
-          }}>
-            <div className="article-image"
-                 style={{backgroundImage: 'url(https://images.fastcompany.net/image/upload/v1480632834/fast-company-share-graphic.png'}}></div>
-            <div className="article-details">
-              <div className="article-source">Fast Company</div>
-              <h3 className="article-headline">Interview with Wala CEO Tricia Martinez</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="https://www.facebook.com/FastCompany/videos/10155475899464077/">Watch Video</a>
-            </div>
-          </div>
-          <div className="article-slide" onClick={() => {
-            this.openLink('https://www.cnbcafrica.com/videos/2018/02/22/bitcoin-is-a-victim-of-its-own-success-wala-ceo/')
-          }}>
-            <div className="article-image"
-                 style={{backgroundImage: 'url(https://cdn.cnbcafrica.com/wp-content/uploads/2018/02/22170245/1571595826001_5738532684001_5738516037001-vs-356x220.jpeg'}}></div>
-            <div className="article-details">
-              <div className="article-source">CNBC Africa</div>
-              <h3 className="article-headline">Bitcoin is a victim of its own success – Wala CEO</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="https://www.cnbcafrica.com/videos/2018/02/22/bitcoin-is-a-victim-of-its-own-success-wala-ceo/">Read
-                Article</a>
-            </div>
-          </div>
-          <div className="article-slide" onClick={() => {
-            this.openLink('https://www.cnbcafrica.com/apo/2017/12/07/can-cryptocurrencies-reduce-global-poverty/')
-          }}>
-            <div className="article-image"
-                 style={{backgroundImage: 'url(https://cdn.cnbcafrica.com/wp-content/uploads/2017/10/09155553/apo_logo-768x461.png'}}></div>
-            <div className="article-details">
-              <div className="article-source">CNBC Africa</div>
-              <h3 className="article-headline">Can cryptocurrencies reduce global poverty?</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="https://www.cnbcafrica.com/apo/2017/12/07/can-cryptocurrencies-reduce-global-poverty/">Read
-                Article</a>
-            </div>
-          </div>
-          <div className="article-slide" onClick={() => {
-            this.openLink('https://www.huffingtonpost.com/entry/can-blockchain-solve-the-prosperity-paradox_us_59edfa93e4b092f9f24193d2')
-          }}>
-            <div className="article-image"
-                 style={{backgroundImage: 'url(https://img.huffingtonpost.com/asset/59edfb2714000028008c92c1.jpg?ops=scalefit_820_noupscale)'}}></div>
-            <div className="article-details">
-              <div className="article-source">Huffington Post</div>
-              <h3 className="article-headline">Can Blockchain Solve The Prosperity Paradox?</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="https://www.huffingtonpost.com/entry/can-blockchain-solve-the-prosperity-paradox_us_59edfa93e4b092f9f24193d2">Read
-                Article</a>
-            </div>
-          </div>
-          <div className="article-slide" onClick={() => {
-            this.openLink('https://www.coinspeaker.com/2017/10/04/newtown-partners-invests-blockchain-start-wala-solve-financial-exclusion-affecting-3-5bn-people/')
-          }}>
-            <div className="article-image"
-                 style={{backgroundImage: `url(${DefaultImage})`}}></div>
-            <div className="article-details">
-              <div className="article-source">Coinspeaker</div>
-              <h3 className="article-headline">Newtown Partners Invests in Blockchain Start-Up Wala, To Solve Financial
-                Exclusion Affecting 3.5bn People</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="https://www.coinspeaker.com/2017/10/04/newtown-partners-invests-blockchain-start-wala-solve-financial-exclusion-affecting-3-5bn-people/">Read
-                Article</a>
-            </div>
-          </div>
-          <div className="article-slide" onClick={() => {
-            this.openLink('https://coinreviews.io/tricia-martinez-wala/')
-          }}>
-            <div className="article-image"
-                 style={{backgroundImage: 'url(https://coinreviews.io/wp-content/uploads/2017/10/tricia-martinez-wala.png'}}></div>
-            <div className="article-details">
-              <div className="article-source">Coin Reviews</div>
-              <h3 className="article-headline">Tricia Martinez – Wala, Founder & Chief Executive Officer</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="https://coinreviews.io/tricia-martinez-wala/">Read Article</a>
-            </div>
-          </div>
-          <div className="article-slide" onClick={() => {
-            this.openLink('https://ventureburn.com/2017/10/wala-investment-newtown-partners/')
-          }}>
-            <div className="article-image"
-                 style={{backgroundImage: 'url(https://ventureburn.com/wp-content/uploads/2017/10/Walateam1.jpg'}}></div>
-            <div className="article-details">
-              <div className="article-source">Ventureburn</div>
-              <h3 className="article-headline">Fintech startup Wala secures equity investment from Newtown Partners</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="https://ventureburn.com/2017/10/wala-investment-newtown-partners/">Read Article</a>
-            </div>
-          </div>
-          <div className="article-slide" onClick={() => {
-            this.openLink('http://disrupt-africa.com/2017/11/sas-wala-partners-veridium-to-pilot-biometric-banking-authentication/')
-          }}>
-            <div className="article-image"
-                 style={{backgroundImage: 'url(http://disrupt-africa.com/wp-content/uploads/2017/10/Wala-1-702x336.jpg'}}></div>
-            <div className="article-details">
-              <div className="article-source">Disrupt Africa</div>
-              <h3 className="article-headline">SA’s Wala partners Veridium to pilot biometric banking
-                authentication</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="http://disrupt-africa.com/2017/11/sas-wala-partners-veridium-to-pilot-biometric-banking-authentication/">Read
-                Article</a>
-            </div>
-          </div>
-          <div className="article-slide" onClick={() => {
-            this.openLink('https://www.finextra.com/pressarticle/71234/m-vendr-to-accept-wala-digital-currency-at-mpos')
-          }}>
-            <div className="article-image" style={{backgroundImage: 'url(http://mvendr.com/img/home.png)'}}></div>
-            <div className="article-details">
-              <div className="article-source">Finextra</div>
-              <h3 className="article-headline">M-vendr to accept Wala digital currency at mPOS</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="https://www.finextra.com/pressarticle/71234/m-vendr-to-accept-wala-digital-currency-at-mpos">Read
-                Article</a>
-            </div>
-          </div>
-          <div className="article-slide" onClick={() => {
-            this.openLink('https://www.fincaimpact.com/news-insights/finca-and-wala-offer-innovative-mobile-financial-services/')
-          }}>
-            <div className="article-image"
-                 style={{backgroundImage: 'url(https://www.fincaimpact.com/wp-content/uploads/2017/10/mobile-Africa.jpg'}}></div>
-            <div className="article-details">
-              <div className="article-source">Finca Impact Finance</div>
-              <h3 className="article-headline">Universal and Affordable Financial Services are Possible – Only Through
-                Collaboration</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="https://www.fincaimpact.com/news-insights/finca-and-wala-offer-innovative-mobile-financial-services/">Read
-                Article</a>
-            </div>
-          </div>
-          <div className="article-slide" onClick={() => {
-            this.openLink('https://ventureburn.com/2017/10/wala-financial-exclusion-emerging-markets/')
-          }}>
-            <div className="article-image"
-                 style={{backgroundImage: 'url(https://ventureburn.com/wp-content/uploads/2017/10/wala-ceo-tricia-martinez.jpg'}}></div>
-            <div className="article-details">
-              <div className="article-source">Ventureburn</div>
-              <h3 className="article-headline">Q&A: Wala CEO on tackling financial exclusion in emerging markets</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="https://ventureburn.com/2017/10/wala-financial-exclusion-emerging-markets/">Read Article</a>
-            </div>
-          </div>
-          <div className="article-slide" onClick={() => {
-            this.openLink('https://www.investitin.com/wala/')
-          }}>
-            <div className="article-image"
-                 style={{backgroundImage: `url(${DefaultImage})`}}></div>
-            <div className="article-details">
-              <div className="article-source">InvestItIn</div>
-              <h3 className="article-headline">Dala: A social model to bank the unbanked</h3>
-              <a rel="noopener noreferrer" className="article-link" target="_blank"
-                 href="https://www.investitin.com/wala/">Read Article</a>
-            </div>
-          </div>
         </Slider>
       </section>
     );
