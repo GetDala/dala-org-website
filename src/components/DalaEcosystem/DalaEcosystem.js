@@ -10,6 +10,7 @@ import WalaLogo from './images/EcosystemWalaLogo.svg';
 
 // components
 import CallToAction from '../CallToAction/CallToAction';
+import ReactGA from 'react-ga';
 
 class DalaEcosystem extends Component {
 
@@ -76,6 +77,10 @@ class DalaEcosystem extends Component {
                         variation={'anchor'}
                         destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dalawhitepaper.pdf'}
                         label={'Whitepaper'}
+                        onClick={() => { ReactGA.event({
+                          category: 'Whitepaper',
+                          action: 'go to whitepaper'
+                        }); }}
                       />
                     </span>
                     <span className="ecosystem-cta">
@@ -83,6 +88,10 @@ class DalaEcosystem extends Component {
                         variation={'anchor'}
                         destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dala_lite_paper.pdf'}
                         label={'Lite Paper'}
+                        onClick={() => { ReactGA.event({
+                          category: 'Lite paper',
+                          action: 'go to lite paper'
+                        }); }}
                       />
                     </span>
                     <span className="ecosystem-cta">
@@ -90,6 +99,10 @@ class DalaEcosystem extends Component {
                         variation={'anchor'}
                         destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dala_russian_lite_paper.pdf'}
                         label={'Lite Paper (RUS)'}
+                        onClick={() => { ReactGA.event({
+                          category: 'Lite paper Russia',
+                          action: 'go to lite paper russia'
+                        }); }}
                       />
                     </span>
                     <span className="ecosystem-cta">
@@ -97,6 +110,10 @@ class DalaEcosystem extends Component {
                         variation={'anchor'}
                         destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dala_japanese_lite_paper.pdf'}
                         label={'Lite Paper (JPN)'}
+                        onClick={() => { ReactGA.event({
+                          category: 'Lite paper japan',
+                          action: 'go to lite paper japan'
+                        }); }}
                       />
                     </span>
                   </div>

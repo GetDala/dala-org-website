@@ -19,7 +19,12 @@ import News from '../News/News';
 import BecomePartners from '../BecomePartners/BecomePartners';
 import Footer from '../Footer/Footer';
 import HeroNavBar from '../Navbars/HeroNavbar/HeroNavBar';
-import Redirect from '../Redirect/Redirect';
+import PrivacyPolicy from '../Legal/PrivacyPolicy/PrivacyPolicy';
+import Terms from '../Legal/Terms/Terms';
+
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-78909073-2');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 class App extends Component {
 
@@ -44,6 +49,32 @@ class App extends Component {
       );
     };
 
+    const Privacy = () => {
+      return(
+        <div>
+          <div className="hero-head">
+            <HeroNavBar legalSection />
+          </div>
+          <PrivacyPolicy />
+          <BecomePartners legalSection />
+          <Footer legalSection />
+        </div>
+      );
+    };
+
+    const TsAndCs = () => {
+      return(
+        <div>
+          <div className="hero-head">
+            <HeroNavBar legalSection />
+          </div>
+          <Terms />
+          <BecomePartners legalSection />
+          <Footer legalSection />
+        </div>
+      );
+    };
+
     const ScrollToTop = () => {
       window.scrollTo(0, 0);
       return null;
@@ -54,8 +85,8 @@ class App extends Component {
         <div>
           <Route component={ScrollToTop} />
           <Route exact path="/" component={MainSite} />
-          <Route exact path="/privacypolicy" component={Redirect} />
-          <Route exact path="/terms" component={Redirect} />
+          <Route exact path="/privacypolicy" component={Privacy} />
+          <Route exact path="/terms" component={TsAndCs} />
         </div>
       </Router>
     );

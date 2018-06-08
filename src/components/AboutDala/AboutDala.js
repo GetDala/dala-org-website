@@ -6,6 +6,7 @@ import './AboutDala.css';
 // images
 import IsometricMap from './images/IsometricMap/IsometricMap';
 import CallToAction from '../CallToAction/CallToAction';
+import ReactGA from 'react-ga';
 
 class AboutDala extends Component {
 
@@ -53,6 +54,10 @@ class AboutDala extends Component {
                         variation={'anchor'}
                         destination={'https://github.com/GetDala/dala-smart-contracts'}
                         label={'Smart Contract'}
+                        onClick={() => { ReactGA.event({
+                          category: 'Smart Contract link',
+                          action: 'go to smart contract'
+                        }); }}
                       />
                     </span>
                     <span className="about-dala-cta">
@@ -60,6 +65,10 @@ class AboutDala extends Component {
                         variation={'anchor'}
                         destination={'https://www.iosiro.com/dala-token-sale-audit'}
                         label={'Smart Contract Audit'}
+                        onClick={() => { ReactGA.event({
+                          category: 'Smart Contract Audit',
+                          action: 'go to smart contract audit'
+                        }); }}
                       />
                     </span>
                     <span className="about-dala-cta">
@@ -67,6 +76,10 @@ class AboutDala extends Component {
                         variation={'anchor'}
                         destination={'https://etherscan.io/token/0xa87c3ec87eb802aad080df0adb331e504d327e5d'}
                         label={'Token Contract Address'}
+                        onClick={() => { ReactGA.event({
+                          category: 'Token Contract Address',
+                          action: 'go to token contract address'
+                        }); }}
                       />
                     </span>
                   </div>

@@ -6,6 +6,7 @@ import './DalaTokenSale.css';
 
 // components
 import CallToAction from '../CallToAction/CallToAction';
+import ReactGA from 'react-ga';
 
 class DalaTokenSale extends Component {
   render() {
@@ -33,7 +34,10 @@ class DalaTokenSale extends Component {
           <div className="columns">
             <div className="column is-8 is-offset-2">
               <div className="more-info">More information on our Telegram</div>
-              <CallToAction variation="anchor" destination="https://t.me/getwala" label="Telegram" />
+              <CallToAction variation="anchor" destination="https://t.me/getwala" label="Telegram" onClick={() => { ReactGA.event({
+                category: 'Telegram Link',
+                action: 'Go to Dala telegram'
+              }); }} />
             </div>
           </div>
         </div>

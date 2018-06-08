@@ -11,6 +11,7 @@ import LearnMoreChevron from './images/LearnMoreChevron/LearnMoreChevron';
 import DalaWordmark from './images/DalaWordmark/DalaWordmark';
 import DalaCubeAnimation from './images/DalaCubeAnimation/DalaCubeAnimation';
 
+import ReactGA from 'react-ga';
 var Link = Scroll.Link;
 
 class Hero extends Component {
@@ -24,7 +25,10 @@ class Hero extends Component {
           <h1 className="hero-h1">Enabling instant, borderless micropayments</h1>
           <h2 className="hero-h2">Designed to include 3.5 billion people in a new financial system</h2>
           <div className="learn-more">
-            <Link to="pageAboutDala" smooth offset={-85}>
+            <Link to="pageAboutDala" smooth offset={-85} onClick={() => { ReactGA.event({
+              category: 'Learn More',
+              action: 'scrolls to next section'
+            }); }}>
               <span>Learn More</span>
               <LearnMoreChevron/>
             </Link>
