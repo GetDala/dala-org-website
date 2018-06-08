@@ -5,7 +5,11 @@
 
   .footer-nav {
     background: $color-scampipurple-shade3;
-    padding: gridbase-multiplier(2) 36px;
+    padding: gridbase-multiplier(1) 36px;
+
+    .footer-logo {
+      height: 26px;
+    }
 
     a {
       @include small-display-text;
@@ -23,7 +27,36 @@
     padding-bottom: gridbase-multiplier(2);
   }
 
-  .level-left, .level-right {
+  .level {
+
+  }
+  .level-item {
+    @media screen and (max-width: 1220px){
+      padding-top: 9px;
+    }
+  }
+  .level-right {
+    @media screen and (min-width: $tablet) {
+      width: 43%;
+    }
+    @media screen and (max-width: $desktop) {
+      text-align: center;
+    }
+  }
+  .level-left {
+    .divider {
+      width: 1px;
+      height: 18px;
+      margin-left: 18px;
+      background: $color-scampipurple-shade1;
+      display: inline-block;
+    }
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: $tablet) {
+      width: 43%;
+      justify-content: flex-start;
+    }
     @media screen and (max-width: $desktop) {
       text-align: center;
     }

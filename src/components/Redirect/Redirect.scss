@@ -1,0 +1,26 @@
+@import '../../utils/styles/all';
+
+.redirecting-content {
+  @include setAbsolute($top: 50%, $left: 50%, $center: true);
+
+  text-align: center;
+
+  h1 {
+    @include headline;
+    /*opacity: 0;*/
+
+    color: white;
+    margin-top: 18px;
+  }
+
+  .dala-hex img {
+    height: 208px;
+  }
+
+  .wordmark {
+    svg {
+      width: 300px;
+      fill: white;
+    }
+  }
+}

@@ -17,14 +17,14 @@ class Hero extends Component {
 
   render() {
     return (
-      <section className="dala-hero hero is-fullheight">
+      <section id="home" className="dala-hero hero is-fullheight">
         <div className="dala-cube-animation-wrapper"><DalaCubeAnimation /></div>
         <div className="hero-content">
           <div className="dala-wordmark-wrapper"><DalaWordmark /></div>
           <h1 className="hero-h1">Enabling instant, borderless micropayments</h1>
-          <h2 className="hero-h2">Designed to include 3.5 billion people in the formal financial system</h2>
+          <h2 className="hero-h2">Designed to include 3.5 billion people in a new financial system</h2>
           <div className="learn-more">
-            <Link to="pageAboutDala" smooth>
+            <Link to="pageAboutDala" smooth offset={-85}>
               <span>Learn More</span>
               <LearnMoreChevron/>
             </Link>

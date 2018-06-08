@@ -62,11 +62,7 @@ class DalaEcosystem extends Component {
                       <img alt="" src={WalaLogo}/>
                     </div>
                     <p>
-                      The first application to make use of Dala is the Wala Financial Platform. Upon launch, the Dala
-                      token will have immediate utility within the Wala Financial Platform where a user can transfer
-                      Dala to other Wala users for free, remit across borders, and redeem for airtime, data, and other
-                      value-added services. Together, the Dala token and the Wala Financial Platform can remove all
-                      barriers enabling zero-fee and accessible financial services.
+                      The first application to make use of Dala is the Wala Financial Platform. Since launch (April 2018), the Dala token has had utility within the Wala Financial Platform where a user can transfer Dala to other Wala users for free, remit across borders, and redeem for airtime, data, and other value-added services. Together, the Dala token and the Wala Financial Platform are removing all barriers enabling zero-fee and accessible financial services.
                     </p>
                   </div>
                 </div>
