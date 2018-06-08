@@ -6,6 +6,7 @@ import './News.css';
 
 // images
 import DefaultImage from '../Hero/images/headerBG1440.jpg';
+import TraderCobb from './tradercobb.jpg';
 
 // components
 import ReactGA from 'react-ga';
@@ -69,7 +70,7 @@ class News extends Component {
     const articles = [
       {
         url: 'https://www.youtube.com/watch?v=XUxBP0Nl3gw',
-        thumbnail: 'https://i.ytimg.com/vi_webp/XUxBP0Nl3gw/maxresdefault.webp',
+        thumbnail: TraderCobb,
         title: 'TraderCobb Interviews Tricia Martinez @ Consensus Blockchain Week – New York',
         source: 'TraderCobb',
         date: 'May 2018',
