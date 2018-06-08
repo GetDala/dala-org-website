@@ -75,7 +75,7 @@ class DalaEcosystem extends Component {
                     <span className="ecosystem-cta">
                       <CallToAction
                         variation={'anchor'}
-                        destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dalawhitepaper.pdf'}
+                        destination={'https://s3-eu-west-1.amazonaws.com/dalaorg-website-bucket/dalawhitepaper.pdf'}
                         label={'Whitepaper'}
                         onClick={() => { ReactGA.event({
                           category: 'Whitepaper',
@@ -86,7 +86,7 @@ class DalaEcosystem extends Component {
                     <span className="ecosystem-cta">
                       <CallToAction
                         variation={'anchor'}
-                        destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dala_lite_paper.pdf'}
+                        destination={'https://s3-eu-west-1.amazonaws.com/dalaorg-website-bucket/dala_lite_paper.pdf'}
                         label={'Lite Paper'}
                         onClick={() => { ReactGA.event({
                           category: 'Lite paper',
@@ -97,7 +97,7 @@ class DalaEcosystem extends Component {
                     <span className="ecosystem-cta">
                       <CallToAction
                         variation={'anchor'}
-                        destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dala_russian_lite_paper.pdf'}
+                        destination={'https://s3-eu-west-1.amazonaws.com/dalaorg-website-bucket/dala_russian_lite_paper.pdf'}
                         label={'Lite Paper (RUS)'}
                         onClick={() => { ReactGA.event({
                           category: 'Lite paper Russia',
@@ -108,7 +108,7 @@ class DalaEcosystem extends Component {
                     <span className="ecosystem-cta">
                       <CallToAction
                         variation={'anchor'}
-                        destination={'http://wala-tokensale-website.s3-website-eu-west-1.amazonaws.com/dala_japanese_lite_paper.pdf'}
+                        destination={'https://s3-eu-west-1.amazonaws.com/dalaorg-website-bucket/dala_japanese_lite_paper.pdf'}
                         label={'Lite Paper (JPN)'}
                         onClick={() => { ReactGA.event({
                           category: 'Lite paper japan',
