@@ -69,6 +69,46 @@ class News extends Component {
 
     const articles = [
       {
+        url: 'https://www.coindesk.com/african-startup-ethereums-scaling-issues/',
+        thumbnail: 'https://media.coindesk.com/uploads/2018/06/Screen-Shot-2018-06-08-at-4.43.28-PM-e1528704129157-860x430.png',
+        title: 'Crypto Startup Wala Is Reaching Africans with Ethereum Micropayments',
+        source: 'coindesk',
+        date: 'Jun 2018',
+        type: 'article'
+      },
+      {
+        url: 'https://themarketmogul.com/breakfast-briefing-elons-flamethrowers-ethereum-africa/',
+        thumbnail: 'https://themarketmogul.com/wp-content/uploads/2018/06/Boring_Company_Flamethrower-e1528729661812.jpg',
+        title: 'Breakfast Briefing: Elon\'s Flamethrowers & Ethereum in Africa',
+        source: 'marketmogul',
+        date: 'Jun 2018',
+        type: 'article'
+      },
+      {
+        url: 'https://criptoeconomia.com.br/startup-facilita-vida-de-africanos-ao-permitir-micropagamentos-no-blockchain-do-ethereum/',
+        thumbnail: 'https://s3.amazonaws.com/criptoeconomia/media/2018/06/11125925/gambia-239849_1920.jpg',
+        title: 'Startup facilita vida de africanos ao permitir micropagamentos com o blockchain do Ethereum',
+        source: 'criptoeconomia',
+        date: 'Jun 2018',
+        type: 'article'
+      },
+      {
+        url: 'https://www.coincrispy.com/2018/06/11/wala-micropagos-ethereum-sudafrica/',
+        thumbnail: 'https://cdn.coincrispy.com/wp-content/uploads/2018/06/Wala-app.jpg',
+        title: 'Aplicación Wala permitirá efectuar micropagos con Ethereum en Sudáfrica',
+        source: 'Coincrispy',
+        date: 'Jun 2018',
+        type: 'article'
+      },
+      {
+        url: 'https://bitcoinexchangeguide.com/meet-wala-african-ethereum-cryptocurrency-micro-payments-startup/',
+        thumbnail: 'https://3mgj4y44nc15fnv8d303d8zb-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/Crypto-Currency-Startup-Wala-Using-Ethereum-Micropayments-696x449.jpg',
+        title: 'Meet WALA: African Ethereum Cryptocurrency Micro-Payments Startup',
+        source: 'BitcoinExchangeGuide',
+        date: 'Jun 2018',
+        type: 'article'
+      },
+      {
         url: 'https://www.youtube.com/watch?v=XUxBP0Nl3gw',
         thumbnail: TraderCobb,
         title: 'TraderCobb Interviews Tricia Martinez @ Consensus Blockchain Week – New York',
