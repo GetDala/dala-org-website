@@ -83,39 +83,6 @@ class DalaEcosystem extends Component {
                         }); }}
                       />
                     </span>
-                    <span className="ecosystem-cta">
-                      <CallToAction
-                        variation={'anchor'}
-                        destination={'https://s3-eu-west-1.amazonaws.com/dalaorg-website-bucket/dala_lite_paper.pdf'}
-                        label={'Lite Paper'}
-                        onClick={() => { ReactGA.event({
-                          category: 'Lite paper',
-                          action: 'go to lite paper'
-                        }); }}
-                      />
-                    </span>
-                    <span className="ecosystem-cta">
-                      <CallToAction
-                        variation={'anchor'}
-                        destination={'https://s3-eu-west-1.amazonaws.com/dalaorg-website-bucket/dala_russian_lite_paper.pdf'}
-                        label={'Lite Paper (RUS)'}
-                        onClick={() => { ReactGA.event({
-                          category: 'Lite paper Russia',
-                          action: 'go to lite paper russia'
-                        }); }}
-                      />
-                    </span>
-                    <span className="ecosystem-cta">
-                      <CallToAction
-                        variation={'anchor'}
-                        destination={'https://s3-eu-west-1.amazonaws.com/dalaorg-website-bucket/dala_japanese_lite_paper.pdf'}
-                        label={'Lite Paper (JPN)'}
-                        onClick={() => { ReactGA.event({
-                          category: 'Lite paper japan',
-                          action: 'go to lite paper japan'
-                        }); }}
-                      />
-                    </span>
                   </div>
                 </div>
               </div>
