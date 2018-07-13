@@ -21,6 +21,7 @@ import Footer from '../Footer/Footer';
 import HeroNavBar from '../Navbars/HeroNavbar/HeroNavBar';
 import PrivacyPolicy from '../Legal/PrivacyPolicy/PrivacyPolicy';
 import Terms from '../Legal/Terms/Terms';
+import EmailDisclaimer from '../Legal/EmailDisclaimer/EmailDisclaimer';
 
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-78909073-2');
@@ -75,6 +76,19 @@ class App extends Component {
       );
     };
 
+    const EmailLegal = () => {
+      return(
+        <div>
+          <div className="hero-head">
+            <HeroNavBar legalSection />
+          </div>
+          <EmailDisclaimer />
+          <BecomePartners legalSection />
+          <Footer legalSection />
+        </div>
+      );
+    };
+
     const ScrollToTop = () => {
       window.scrollTo(0, 0);
       return null;
@@ -87,6 +101,7 @@ class App extends Component {
           <Route exact path="/" component={MainSite} />
           <Route exact path="/privacypolicy" component={Privacy} />
           <Route exact path="/terms" component={TsAndCs} />
+          <Route exact path="/emailDisclaimer" component={EmailLegal} />
         </div>
       </Router>
     );

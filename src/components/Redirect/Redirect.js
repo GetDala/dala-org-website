@@ -12,10 +12,10 @@ export class Redirect extends Component {
   componentWillMount(){
     switch(this.state.match.path) {
       case '/terms':
-        window.location = 'https://s3-eu-west-1.amazonaws.com/dalaorg-website-bucket/Dala.org+Website+Terms+-+5+June+2018+.pdf';
+        window.location = 'https://s3-eu-west-1.amazonaws.com/dalaorg-website-bucket/Dala.org+Website+EmailDisclaimer+-+5+June+2018+.pdf';
         break;
       case '/privacypolicy':
-        window.location = 'https://s3-eu-west-1.amazonaws.com/dalaorg-website-bucket/Dala.org+Privacy+Terms+-+5+June+2018+.pdf';
+        window.location = 'https://s3-eu-west-1.amazonaws.com/dalaorg-website-bucket/Dala.org+Privacy+EmailDisclaimer+-+5+June+2018+.pdf';
         break;
     }
   }
