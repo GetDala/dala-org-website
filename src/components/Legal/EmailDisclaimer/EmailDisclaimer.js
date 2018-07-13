@@ -26,7 +26,6 @@ class EmailDisclaimer extends Component {
               <p>Dala reserves the exclusive right to prohibit, at its sole discretion, any person/s or entities from participating in any activities, crypto or token- related services/issuances/sales, additional services or products which may be communicated by way of this email, for reasons which include, but are not limited to, domicile, jurisdictional compliance regulatory concerns, legal actions, international sanctions, commercial or any other reasons or obligations as the case may be.</p>
               <p>Please report any email abuse to: <a href="mailTo:info@dala.org">info@dala.org</a></p>
               <p>This email legal notice may be amended without notice.</p>
-
             </div>
           </div>
         </div>
