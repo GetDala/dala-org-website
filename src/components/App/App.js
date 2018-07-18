@@ -11,6 +11,7 @@ import '../../utils/styles/boilerplate.css';
 import Hero from '../Hero/Hero';
 import AboutDala from '../AboutDala/AboutDala';
 import DalaEcosystem from '../DalaEcosystem/DalaEcosystem';
+import DalaProtocols from '../DalaProtocols/DalaProtocols';
 import RewardsEngine from '../RewardsEngine/RewardsEngine';
 import DalaGovernance from '../DalaGovernance/DalaGovernance';
 import ProductTimeline from '../ProductTimeline/ProductTimeline';
@@ -39,6 +40,7 @@ class App extends Component {
           <Hero />
           <AboutDala />
           <DalaEcosystem />
+          <DalaProtocols />
           <RewardsEngine />
           <DalaGovernance />
           <ProductTimeline />

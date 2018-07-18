@@ -48,7 +48,7 @@ class ProductTimeline extends Component {
                       <img src={DalaTokenBlank} alt=""/>
                       <span>OCT<br/>2017</span>
                     </div>
-                    <div className="timeline-content"><span>Dala Foundation annouces the issuance of a crypto-token that enables zero-fee and instantaneous micro transactions for the masses.</span>
+                    <div className="timeline-content"><span>Dala Foundation announces the issuance of a crypto-token that enables zero-fee and instantaneous micro transactions for the masses.</span>
                     </div>
                   </li>
                   <li className="is-clearfix is-flex-desktop">
@@ -64,15 +64,15 @@ class ProductTimeline extends Component {
                       <span>Q1<br/>2018</span>
                       <img src={DalaTokenBlank} alt=""/>
                     </div>
-                    <div className="timeline-content"><span>Launch Dala wallet with functionality to earn, redeeem, and transact with Dala.<br/><br/>Expand the Dala ecosystem through enterprise partnerships.</span>
+                    <div className="timeline-content"><span>Dala wallet launched with functionality to earn, redeem, and transact with Dala.</span>
                     </div>
                   </li>
                   <li className="is-clearfix is-flex-desktop">
                     <div className="timeline-date">
-                      <span>Q2<br/>2018</span>
+                      <span>Q3<br/>2018</span>
                       <img src={DalaTokenBlank} alt=""/>
                     </div>
-                    <div className="timeline-content"><span>Release Dala Enterprise rewards engine.</span></div>
+                    <div className="timeline-content"><span>Release first Dala decentralized protocols to expand Dala ecosystem and utility.</span></div>
                   </li>
                 </ul>
               </div>

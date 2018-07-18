@@ -1,0 +1,105 @@
+@import '../../utils/styles/all';
+
+#DalaProtocols {
+  padding-bottom: gridbase-multiplier(4);
+  margin-right: 36px;
+  margin-left: 36px;
+
+  .section-header {
+    padding-bottom: gridbase-multiplier(2);
+  }
+
+  .section-content {
+    .columns {
+      @include border-radius;
+
+      box-shadow: $layout-elevation-3;
+      position: relative;
+
+      .add-purplebg-1 {
+        background: $color-walateal-shade3;
+
+        @media screen and (min-width: $desktop) {
+          border-bottom-left-radius: 3px;
+        }
+
+        .protocol-logo {
+          height: 78px;
+          margin-top: 26px;
+
+          img {
+            height: 52px
+          }
+        }
+      }
+      .add-purplebg-2 {
+        background: $color-walateal-shade2;
+
+        .protocol-logo {
+          height: 78px;
+          margin-top: 26px;
+
+          img {
+            height: 42px
+          }
+        }
+      }
+      .add-purplebg-3 {
+        background: $color-walateal-shade3;
+
+        @media screen and (min-width: $desktop) {
+          border-bottom-right-radius: 3px;
+        }
+
+        .protocol-logo {
+          height: 78px;
+          margin-top: 26px;
+
+          img {
+            height: 40px
+          }
+        }
+      }
+    }
+
+    p {
+      color: white;
+      margin-right: 18px;
+      margin-left: 18px;
+      padding-left: 18px;
+      padding-right: 18px;
+
+      @media screen and (min-width: $desktop) {
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 434px;
+      }
+    }
+
+    .add-bold {
+      font-family: 'poppins_regular', sans-serif;
+      font-size: 16px;
+      line-height: 26px;
+      position: relative;
+
+      @media screen and (min-width: $desktop) {
+        height: 78px;
+      }
+      @media screen and (min-width: $fullhd) {
+        height: 65px;
+      }
+    }
+
+    .protocol-divider {
+      width: 70%;
+      margin: 0 auto 26px auto;
+      height: 4px;
+      background-color: $color-walateal-shade1;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
