@@ -31,7 +31,7 @@ class ProductTimeline extends Component {
               <div className="column is-half-desktop phone-flex is-flex-desktop">
                 <div className="phone-wrapper">
                   <div className="video-wrapper">
-                    <video width="100%" height="100%" autoPlay preload="auto" loop>
+                    <video width="100%" height="100%" autoPlay muted preload="auto" loop>
                       <source src={videoWebm} type="video/webm"/>
                       <source src={videoOgv} type="video/ogv"/>
                       <source src={videoMp4} type="video/mp4"/>
