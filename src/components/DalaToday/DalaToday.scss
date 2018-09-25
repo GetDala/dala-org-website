@@ -1,16 +1,24 @@
 @import '../../utils/styles/all';
 
-#DalaProtocols {
-  padding-bottom: gridbase-multiplier(2);
-  margin-right: 36px;
-  margin-left: 36px;
-
-  .protocols-hero {
+#DalaToday {
+  .dala-today-hero {
     background: $color-scampipurple-base;
     position: relative;
     z-index: 0;
+    margin-bottom: 26px;
   }
-  .protocols-hero:after {
+  .dala-today-hero:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 68%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color-scampipurple-shade2;
+    opacity: 0.3;
+  }
+  .dala-today-hero:after {
     position: absolute;
     content: "";
     display: block;
@@ -27,40 +35,36 @@
     background: radial-gradient(ellipse at center, rgba(116,111,176,1) 0%,rgba(70,67,106,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#746fb0', endColorstr='#46436a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   }
-
-  .section-header {
-    padding-bottom: gridbase-multiplier(2);
-  }
-
-  .protocol-logo {
-    img {
-      height: 104px;
-      margin-bottom: 8px;
-    }
-  }
-
   p {
     color: $color-scampipurple-tint4;
-    margin-bottom: 26px;
-
-    strong {
-      font-family: 'proxima_nova_extrabold', sans-serif;
-      color: white;
-    }
+    margin-bottom: $layout-vertical-rhythm;
   }
-  .no-margin {
-    margin-bottom: 0;
+  .dala-today-wala-logo {
+    height: 182px;
+    margin-left: -25px;
+    margin-bottom: 21px;
   }
+  .dala-today-stat {
+    @include display;
 
-  .protocol-header {
-    @include headline;
-
+    font-size: 42px;
+    width: 182px;
+    height: 182px;
+    border: 13px solid white;
+    text-align: center;
+    line-height: 164px;
     color: white;
-    margin-bottom: 13px;
-  }
+    margin: 0 auto 26px auto;
 
-  @media screen and (min-width: $desktop) {
-    margin-right: 0;
-    margin-left: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .dala-today-phone-column {
+    position: relative;
+    
+    .dala-today-phone-base {
+      max-width: 85%;
+    }
   }
 }

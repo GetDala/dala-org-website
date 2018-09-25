@@ -32,6 +32,18 @@
 
   .section-header {
     padding-bottom: gridbase-multiplier(1);
+
+    h3 {
+      margin-bottom: 13px;
+    }
+  }
+
+  .ecosystem-experience {
+    margin-bottom: 39px;
+  }
+
+  .dala-hex-logo {
+    height: 65px;
   }
 
   .add-elevation {
@@ -45,55 +57,24 @@
   .section-content {
     .main-content {
       position: relative;
-      overflow: hidden;
-    }
-    .main-content:before {
-      background: $color-scampipurple-shade1;
-      @include setAbsolute($top: 0, $left: 0, $right: 0);
-      content: "";
-      display: block;
-      height: 50%;
-      z-index: -2;
-      border-top-left-radius: 3px;
 
-      @media screen and (min-width: $desktop){
-        @include setAbsolute($top: 0, $left: 0, $bottom: 0, $right: auto);
-        width: 50%;
-        height: auto;
+      .column {
+        padding: 0;
       }
-    }
-    .main-content:after {
-      background: $color-walateal-shade1;
-      @include setAbsolute($top: 50%, $left: 0, $right: 0);
-      content: "";
-      display: block;
-      height: 50%;
-      z-index: -2;
-      border-top-right-radius: 3px;
 
-      @media screen and (min-width: $desktop){
-        @include setAbsolute($top: 0, $left: auto, $bottom: 0, $right: 0);
-        width: 50%;
-        height: auto;
-      }
-    }
-    .hexagon-graphic {
-      @include setAbsolute($top: 0, $bottom: 0, $left: 50%);
-      @include transform(translateX(-50%) rotate(90deg));
+      .video-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 56.25%;
 
-      -webkit-transform-origin: 50% 50%;
-      -moz-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-      -o-transform-origin: 50% 50%;
-      transform-origin: 50% 50%;
-      
-      z-index: -1;
-      width: 50%;
-      text-align: center;
-      
-      @media screen and (min-width: $desktop){
-        width: 33.3333333%;
-        @include transform(translateX(-50%) rotate(0deg));
+        .embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
       }
     }
     .dala-explainer {

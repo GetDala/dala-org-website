@@ -1,0 +1,38 @@
+@import '../../utils/styles/all';
+
+#Partnerships {
+  .remove-offset-desktop {
+    @media screen and (min-width: 1032px) {
+      margin-left: 0;
+    }
+  }
+  .partnership-header {
+    @include headline;
+
+    color: $color-scampipurple-shade1;
+  }
+  p {
+    margin-bottom: 26px;
+  }
+  .picture-frame {
+    width: 100%;
+    position: relative;
+    background: black;
+    margin-bottom: 26px;
+  }
+  .picture-frame:before {
+    padding-top: 50%;
+    content: "";
+    display: block;
+  }
+  .solar-picture {
+    background: url("./images/solar_announcement.png") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .agriculture-picture {
+    background: url("./images/farmers_announcement.png") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+}

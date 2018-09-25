@@ -11,10 +11,10 @@ import '../../utils/styles/boilerplate.css';
 import Hero from '../Hero/Hero';
 import AboutDala from '../AboutDala/AboutDala';
 import DalaEcosystem from '../DalaEcosystem/DalaEcosystem';
+import DalaToday from '../DalaToday/DalaToday';
+import Partnerships from '../Partnerships/Partnerships';
 import DalaProtocols from '../DalaProtocols/DalaProtocols';
-import RewardsEngine from '../RewardsEngine/RewardsEngine';
-import DalaGovernance from '../DalaGovernance/DalaGovernance';
-import ProductTimeline from '../ProductTimeline/ProductTimeline';
+import Team from '../Team/Team';
 import DalaTokenSale from '../DalaTokenSale/DalaTokenSale';
 import News from '../News/News';
 import BecomePartners from '../BecomePartners/BecomePartners';
@@ -40,10 +40,10 @@ class App extends Component {
           <Hero />
           <AboutDala />
           <DalaEcosystem />
+          <DalaToday />
+          <Partnerships />
           <DalaProtocols />
-          <RewardsEngine />
-          <DalaGovernance />
-          <ProductTimeline />
+          <Team />
           <DalaTokenSale />
           <News />
           <BecomePartners />

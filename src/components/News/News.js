@@ -69,6 +69,38 @@ class News extends Component {
 
     const articles = [
       {
+        url: 'https://bitsonline.com/wala-tricia-martinez-chainx/?utm_source=twitter&utm_medium=social&utm_campaign=SocialWarfare',
+        thumbnail: 'https://s3.amazonaws.com/bit-wp-repository/wp-content/uploads/2018/09/18094334/tricia-890x480.png',
+        title: 'Wala\'s Tricia Martinez at ChainX: Toward \'Better Than Banking\'',
+        source: 'bitsonline',
+        date: 'Sep 2018',
+        type: 'article'
+      },
+      {
+        url: 'http://ventureburn.com/2018/09/wala-zambezi-prize/?preview_id=138539',
+        thumbnail: 'http://ventureburn.com/wp-content/uploads/2018/09/Zambezi.jpg',
+        title: 'SA startup Wala wins $100k Zambezi Prize for Innovation in Financial Inclusion',
+        source: 'ventureburn',
+        date: 'Sep 2018',
+        type: 'article'
+      },
+      {
+        url: 'https://distributed.com/news/distributed-2018-panel-explores-how-serve-developing-markets-using-blockchain-technology/',
+        thumbnail: 'https://media.godistributed.com/img/images/Developing_markets.width-800.jpg',
+        title: 'Distributed 2018 Panel Explores How to Serve Developing Markets Using Blockchain Technology',
+        source: 'distributed',
+        date: 'Aug 2018',
+        type: 'article'
+      },
+      {
+        url: 'https://bitcoinmagazine.com/articles/dala-adds-stellar-blockchain-ecosystem-reveals-multi-chain-strategy/',
+        thumbnail: 'https://fs.bitcoinmagazine.com/img/images/dala.original.png',
+        title: 'Dala Adds Stellar Blockchain to Ecosystem, Reveals Multi-Chain Strategy',
+        source: 'bitcoinmagazine',
+        date: 'Jul 2018',
+        type: 'article'
+      },
+      {
         url: 'https://www.coindesk.com/african-startup-ethereums-scaling-issues/',
         thumbnail: 'https://media.coindesk.com/uploads/2018/06/Screen-Shot-2018-06-08-at-4.43.28-PM-e1528704129157-860x430.png',
         title: 'Crypto Startup Wala Is Reaching Africans with Ethereum Micropayments',

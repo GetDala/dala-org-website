@@ -21,7 +21,7 @@ class AboutDala extends Component {
                   About Dala
                 </h2>
                 <h3 className="section-description">
-                  To enable a decentralized financial system for emerging market consumers, a new crypto-token, Dala, was issued by the Dala Foundation.
+                  $DALA is live, in the hands of over 100K emerging market consumers & has been transacted more than 3M times.
                 </h3>
               </header>
             </div>
@@ -33,12 +33,7 @@ class AboutDala extends Component {
               <div className="column">
                 <div className="columns is-desktop">
                   <div className="column float-on-desktop">
-                    <p>
-                      Dala is an open source multi-chain crypto-asset issued on the public Ethereum blockchain. It can be transacted on a number of blockchains and can be used for consumption on a number of decentralized protocols. Through Dala protocols, consumers have access to borderless, low cost, efficient, and unique financial services enabling them to earn, save, borrow, and transact in a new decentralized financial system. Today, consumers can engage in the Dala ecosystem by making transfers using their own token wallets, via Wala (Dala's launch partner), or through other applications built using the Dala API.
-                    </p>
-                    <p>
-                      The Dala Foundation is a private exempted company incorporated in the Cayman Islands and is intended to become a fully-decentralized autonomous organization (DAO). However, due to the infancy of the crypto governance space, the Dala Foundation will assist with providing a governance forum, administer and maintain the Dala token economy in the short-term.
-                    </p>
+                    <p>Dala is a decentralized financial system designed for emerging markets. It's powered by $DALA, an open-source multi-chain crypto asset. Through Dala protocols (Kopa, Soko and Kazi), consumers have access to borderless, low cost, efficient, and unique financial services enabling them to earn, save, borrow, and transact in a new decentralized financial system. The first major contributor to Dala’s open source development and the first application to enable the use of $DALA for transactions and peer-to-peer transfers is Wala, a zero-fee financial services app for emerging markets.</p>
                   </div>
                   <div className="column is-offset-5-desktop is-7-desktop is-offset-4-widescreen is-8-widescreen">
                     <IsometricMap/>

@@ -1,0 +1,111 @@
+@import '../../utils/styles/all';
+
+#Team {
+  .team-members {
+
+  }
+  .team-member-wrapper {
+    width: 100%;
+    padding: 18px;
+    border-top: 1px solid $color-silver;
+    border-right: 1px solid $color-silver;
+    cursor: pointer;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
+    .team-member-image {
+      width: 100%;
+      margin-bottom: 26px;
+
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    }
+    .team-member-image:before {
+      content: "";
+      display: block;
+      padding-bottom: 75%;
+    }
+
+    .team-member-name {
+      @include headline;
+
+      color: $color-scampipurple-shade1;
+    }
+    .team-member-title {
+      font-family: 'proxima_nova_extrabold', sans-serif;
+      margin-bottom: 18px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      float: left;
+      width: 50%;
+    }
+
+    @media screen and (min-width: $desktop) {
+      float: left;
+      width: 25%;
+    }
+  }
+  .team-member-wrapper:hover {
+    box-shadow: inset $layout-elevation-3;
+    background: $color-scampipurple-tint4;
+  }
+
+  .popupbox-overlay {
+    background: none repeat scroll 0% 0% $color-scampipurple-shade1;
+  }
+  .popupbox-wrapper {
+    @media screen and (min-width: $desktop) {
+      max-width:50%;
+    }
+  }
+  .popup-team-member-image {
+    width: 100%;
+    margin-bottom: 26px;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .popup-team-member-image:before {
+    content: "";
+    display: block;
+    padding-bottom: 50%;
+  }
+
+  .tricia {
+    background: url("./images/tricia.png") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .samer {
+    background: url("./images/samer.png") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .ross {
+    background: url("./images/ross.png") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .llew {
+    background: url("./images/llew.png") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .popup-team-bio {
+    font-size: 14px;
+    line-height: 23px;
+
+    @media screen and (min-width: $tablet){
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
