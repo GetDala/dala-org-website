@@ -1,6 +1,9 @@
 @import '../../utils/styles/all';
 
 #Partnerships {
+  padding-right: 36px;
+  padding-left: 36px;
+
   .remove-offset-desktop {
     @media screen and (min-width: 1032px) {
       margin-left: 0;
@@ -34,5 +37,13 @@
     background: url("./images/farmers_announcement.png") center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+  }
+
+  .remove-padding-on-mobile {
+    padding-top: 0;
+
+    @media screen and (min-width: $desktop) {
+      padding-top: 18px;
+    }
   }
 }

@@ -59,29 +59,23 @@ class HeroNavBar extends Component {
               }); }}>
                 Ecosystem
               </Link>
-              <Link className="hero-navbar-right-link" to="pageRewardsEngine" smooth onClick={() => { ReactGA.event({
-                category: 'Rewards Nav',
-                action: 'Scroll to Rewards section'
+              <Link className="hero-navbar-right-link" to="pageDalaToday" smooth onClick={() => { ReactGA.event({
+                category: 'Dala Today',
+                action: 'Scroll to Dala Today section'
               }); }}>
-                Rewards
+                Dala Today
               </Link>
-              <Link className="hero-navbar-right-link" to="pageDalaGovernance" smooth onClick={() => { ReactGA.event({
-                category: 'Governance Nav',
-                action: 'Scroll to Governance section'
+              <Link className="hero-navbar-right-link" to="pagePartnerships" smooth onClick={() => { ReactGA.event({
+                category: 'Partnerships',
+                action: 'Scroll to Partnerships section'
               }); }}>
-                Governance
+                Partnerships
               </Link>
-              <Link className="hero-navbar-right-link" to="pageDalaProductTimeline" smooth onClick={() => { ReactGA.event({
-                category: 'Timeline Nav',
-                action: 'scroll to timeline section'
+              <Link className="hero-navbar-right-link" to="pageDalaProtocols" smooth onClick={() => { ReactGA.event({
+                category: 'Protocols',
+                action: 'scroll to protocols section'
               }); }}>
-                Timeline
-              </Link>
-              <Link className="hero-navbar-right-link" to="pageTokenSale" smooth onClick={() => { ReactGA.event({
-                category: 'Token Sale nav',
-                action: 'Scroll to Token Sale section'
-              }); }}>
-                Token Sale
+                Protocols
               </Link>
               <CallToAction
                 variation={'scroll'}

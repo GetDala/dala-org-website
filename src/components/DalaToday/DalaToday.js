@@ -4,11 +4,15 @@ import './DalaToday.css';
 
 import WalaLogo from './images/white-wala-logo.svg';
 import PhoneBase from './images/phone-base.png';
+import videoWebm from "./video/wala-app-demo.webm";
+import videoOgv from "./video/wala-app-demo.ogv";
+import videoMp4 from "./video/wala-app-demo.mp4";
+import videoMov from "./video/wala-app-demo.mov";
 
 class DalaToday extends Component {
   render() {
     return (
-      <section id="DalaToday">
+      <section id="DalaToday" name="pageDalaToday">
         <div className="container">
           <div className="columns">
             <div className="column is-8 is-offset-2">
@@ -32,6 +36,14 @@ class DalaToday extends Component {
                   <p>Wala, a zero-fee financial services app for emerging markets, is the first major contributor to Dala’s open source development and the first application to enable the use of $DALA for transactions and peer-to-peer transfers.</p>
                 </div>
                 <div className="column is-4 has-text-centered dala-today-phone-column">
+                  <div className="video-wrapper">
+                    <video width="100%" height="100%" autoPlay muted preload="auto" loop>
+                      <source src={videoWebm} type="video/webm"/>
+                      <source src={videoOgv} type="video/ogv"/>
+                      <source src={videoMp4} type="video/mp4"/>
+                      <source src={videoMov} type="video/mov"/>
+                    </video>
+                  </div>
                   <img src={PhoneBase} className="dala-today-phone-base" />
                 </div>
                 <div className="column is-4">

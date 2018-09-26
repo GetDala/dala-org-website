@@ -35,6 +35,11 @@
         padding-top: 18px;
       }
 
+      @media screen and (min-width: $tablet){
+        font-size: 16px;
+        line-height: 26px;
+      }
+
       @media screen and (min-width: $desktop){
         @include setAbsolute($top: 50%, $left: 0);
         @include transform(translateY(-50%));
@@ -63,8 +68,20 @@
       color: $color-scampipurple-base;
     }
 
+    .ecosystem-links {
+      padding-top: 0;
+
+      @media screen and (min-width: $desktop) {
+        padding-top: 18px;
+      }
+    }
+
     .ecosystem-links a {
-      margin-left: 18px;
+      margin-left: 0;
+
+      @media screen and (min-width: 627px) {
+        margin-left: 18px;
+      }
     }
 
     @media screen and (min-width: $desktop) {

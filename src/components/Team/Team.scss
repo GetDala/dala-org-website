@@ -1,21 +1,39 @@
 @import '../../utils/styles/all';
 
 #Team {
-  .team-members {
-
+  .columns {
+    margin-left: 0;
+    margin-right: 0;
+    @media screen and (min-width: $tablet) {
+      margin-left: -18px;
+      margin-right: -18px;
+    }
   }
   .team-member-wrapper {
     width: 100%;
-    padding: 18px;
+    padding: 18px 18px 9px 18px;
     border-top: 1px solid $color-silver;
     border-right: 1px solid $color-silver;
     cursor: pointer;
+    position: relative;
 
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
+
+    .team-member-button {
+      background: none;
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+    }
 
     .team-member-image {
       width: 100%;
@@ -35,9 +53,11 @@
       @include headline;
 
       color: $color-scampipurple-shade1;
+      padding-bottom: 0;
     }
     .team-member-title {
-      font-family: 'proxima_nova_extrabold', sans-serif;
+      @include subheadline-two;
+
       margin-bottom: 18px;
     }
 
@@ -55,13 +75,20 @@
     box-shadow: inset $layout-elevation-3;
     background: $color-scampipurple-tint4;
   }
+  .team-member-bio {
+    @include small-display-text;
+
+    color: $color-walateal-base;
+    text-transform: uppercase;
+  }
 
   .popupbox-overlay {
     background: none repeat scroll 0% 0% $color-scampipurple-shade1;
   }
   .popupbox-wrapper {
-    @media screen and (min-width: $desktop) {
-      max-width:50%;
+    @media screen and (min-width: $tablet) {
+      max-width:400px;
+      width: 50%;
     }
   }
   .popup-team-member-image {
@@ -76,6 +103,27 @@
     content: "";
     display: block;
     padding-bottom: 50%;
+
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 75%;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 60%;
+    }
+    @media screen and (min-width: $fullhd) {
+      padding-bottom: 75%;
+    }
+  }
+  .popup-team-member-name {
+    @include headline;
+
+    color: $color-scampipurple-shade1;
+    padding-bottom: 0;
+  }
+  .popup-team-member-title {
+    @include subheadline-two;
+
+    margin-bottom: 18px;
   }
 
   .tricia {
@@ -102,10 +150,5 @@
   .popup-team-bio {
     font-size: 14px;
     line-height: 23px;
-
-    @media screen and (min-width: $tablet){
-      font-size: 16px;
-      line-height: 26px;
-    }
   }
 }

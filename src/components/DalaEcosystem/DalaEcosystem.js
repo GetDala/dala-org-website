@@ -31,9 +31,13 @@ class DalaEcosystem extends Component {
                   Dala is designed to bring 3.5 billion underserved consumers into a new decentralized financial system.
                 </h3>
               </header>
-              <div>
-                <p className="ecosystem-experience">The Dala ecosystem expands across borders and financial services, enabling consumers to earn, save, borrow, and transact with Dala. The Dala Foundation’s long-term goal is to maximize the value of the Dala ecosystem. The largest driver of Dala network value is the size and utility of the network to end-users, which the Foundation drives through token rewards and the provision of decentralized protocols to enable the use of Dala.</p>
-              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="columns">
+            <div className="ecosystem-experience column is-10-tablet is-offset-1-tablet">
+              <p>The Dala ecosystem expands across borders and financial services, enabling consumers to earn, save, borrow, and transact with Dala. The Dala Foundation’s long-term goal is to maximize the value of the Dala ecosystem. The largest driver of Dala network value is the size and utility of the network to end-users, which the Foundation drives through token rewards and the provision of decentralized protocols to enable the use of Dala.</p>
             </div>
           </div>
         </div>
