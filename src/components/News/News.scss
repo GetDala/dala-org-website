@@ -1,11 +1,28 @@
 @import '../../utils/styles/all';
 
 #News {
-  margin-top: gridbase-multiplier(1);
+
   overflow-x: hidden;
+  @media screen and (min-width: $tablet){
+    margin-top: gridbase-multiplier(1);
+  }
 
   .section-header {
+    padding-top: 9px;
     padding-bottom: gridbase-multiplier(1);
+
+    @media screen and (min-width: $tablet){
+      padding-top: 0;
+    }
+  }
+  .section-title {
+    font-size: 26px;
+    line-height: 42px;
+
+    @media screen and (min-width: $tablet){
+      font-size: 42px;
+      line-height: 68px;
+    }
   }
   .slider-controls {
     position: relative;

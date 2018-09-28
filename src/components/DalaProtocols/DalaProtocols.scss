@@ -12,10 +12,43 @@
     background: $color-scampipurple-base;
     position: relative;
     z-index: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
 
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+
+    .hero-body {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .protocol-padding {
+        padding: 36px 9px;
+      }
+    }
+
+    .has-text-centered-mobile {
+      text-align: center;
+      background: $color-scampipurple-shade2;
+      line-height: 52px;
+
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    }
+  }
+  .add-borders {
+    border-top: 1px solid rgba($color-scampipurple-tint2, 0.5);
+    border-bottom: 1px solid rgba($color-scampipurple-tint2, 0.5);
+
+    @media screen and (min-width: $tablet) {
+      border-top: none;
+      border-bottom: none;
+
+      border-left: 1px solid rgba($color-scampipurple-tint2, 0.5);
+      border-right: 1px solid rgba($color-scampipurple-tint2, 0.5);
+    }
   }
   .protocols-hero:after {
     position: absolute;

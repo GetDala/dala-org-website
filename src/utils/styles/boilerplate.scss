@@ -87,9 +87,19 @@ h2.section-title {
 h3.section-description {
   @include subheadline-two;
 
-  color: $color-scampipurple-base
-}
+  color: $color-scampipurple-base;
 
+  span.highlight-h3 {
+    border-bottom: 4px solid $color-walateal-base;
+  }
+
+  @media screen and (min-width: $desktop){
+    @include headline;
+  }
+}
+.section-header {
+  padding: 18px 0;
+}
 .section-header h3 {
   margin-bottom: gridbase-multiplier(2);
 }

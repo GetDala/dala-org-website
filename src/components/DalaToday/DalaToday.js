@@ -9,13 +9,15 @@ import videoOgv from "./video/wala-app-demo.ogv";
 import videoMp4 from "./video/wala-app-demo.mp4";
 import videoMov from "./video/wala-app-demo.mov";
 
+import userIcon from "./images/users.svg";
+
 class DalaToday extends Component {
   render() {
     return (
       <section id="DalaToday" name="pageDalaToday">
         <div className="container">
           <div className="columns">
-            <div className="column is-8 is-offset-2">
+            <div className="column is-10 is-offset-1">
               <header className="section-header has-text-centered">
                 <h2 className="section-title">
                   Dala Today
@@ -47,7 +49,10 @@ class DalaToday extends Component {
                   <img src={PhoneBase} className="dala-today-phone-base" />
                 </div>
                 <div className="column is-4">
-                  <div className="dala-today-stat">&gt;100K</div>
+                  <div className="dala-today-stat">
+                    <div><img src={userIcon} className="user-icon" /></div>
+                    Over 100K<br />Users
+                  </div>
                   <p>Today over 100K consumers in Africa are using Dala to send zero-fee payments, remit across borders, and purchase value-added services like mobile data, electricity, and TV services. Together, Dala and Wala are removing all barriers enabling zero-fee and accessible financial services.</p>
                 </div>
               </div>

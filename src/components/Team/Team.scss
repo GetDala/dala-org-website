@@ -72,14 +72,27 @@
     }
   }
   .team-member-wrapper:hover {
-    box-shadow: inset $layout-elevation-3;
-    background: $color-scampipurple-tint4;
+    @media screen and (min-width: $tablet) {
+      box-shadow: inset $layout-elevation-3;
+      background: $color-scampipurple-tint4;
+    }
   }
   .team-member-bio {
     @include small-display-text;
 
     color: $color-walateal-base;
     text-transform: uppercase;
+  }
+  .team-member-bio-text {
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0 36px;
+    margin-bottom: 36px;
+
+    @media screen and (min-width: $tablet){
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 
   .popupbox-overlay {
@@ -150,5 +163,19 @@
   .popup-team-bio {
     font-size: 14px;
     line-height: 23px;
+  }
+
+  .team-footer {
+    border-top: 1px solid $color-silver;
+    padding: 36px 0;
+
+    @media screen and (min-width: $desktop){
+      padding: 72px 0;
+    }
+
+    h3 {
+      width: 83.33333%;
+      margin-left: 8.33333%;
+    }
   }
 }

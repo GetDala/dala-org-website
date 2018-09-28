@@ -33,25 +33,10 @@
         margin-left: 18px;
         margin-right: 18px;
         padding-top: 18px;
-      }
 
-      @media screen and (min-width: $tablet){
-        font-size: 16px;
-        line-height: 26px;
-      }
-
-      @media screen and (min-width: $desktop){
-        @include setAbsolute($top: 50%, $left: 0);
-        @include transform(translateY(-50%));
-
-        width: 50%;
-        padding: 0;
-
-        p {
-          max-width: 434px;
-          margin-left: 36px;
-          margin-right: 0;
-          padding-top: 0;
+        @media screen and (min-width: $desktop){
+          font-size: 16px !important;
+          line-height: 26px !important;
         }
       }
     }
@@ -114,7 +99,11 @@
   }
 }
 #IsometricMap {
-  width: 100%;
+  width: 90%;
 
   .cls-1{fill:#7770b3;}.cls-2{fill:#c7c5df;}.cls-3{fill:url(#linear-gradient);}.cls-4{fill:url(#linear-gradient-2);}.cls-5{fill:url(#linear-gradient-3);}.cls-6{fill:url(#linear-gradient-4);}.cls-7{fill:url(#linear-gradient-5);}.cls-8{fill:url(#linear-gradient-6);}.cls-9{fill:url(#linear-gradient-7);}.cls-10{fill:url(#linear-gradient-8);}.cls-11{fill:url(#linear-gradient-9);}.cls-12{fill:url(#linear-gradient-10);}.cls-13{fill:url(#linear-gradient-11);}.cls-14{fill:url(#linear-gradient-12);}.cls-15{fill:url(#linear-gradient-13);}.cls-16{fill:url(#linear-gradient-14);}.cls-17{fill:url(#linear-gradient-15);}.cls-18{fill:url(#linear-gradient-16);}.cls-19{fill:#1dc4bd;}.cls-20{fill:#5d598d;}.cls-21{fill:#908cc0;}.cls-22{fill:#746fb0;}.cls-23{fill:#fff;}
+
+  @media screen and (min-width: $tablet){
+    width: 100%;
+  }
 }

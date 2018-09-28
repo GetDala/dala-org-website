@@ -15,13 +15,13 @@ class AboutDala extends Component {
       <section id="AboutDala" name="pageAboutDala">
         <div className="container">
           <div className="columns">
-            <div className="column is-8 is-offset-2">
+            <div className="column is-10 is-offset-1">
               <header className="section-header has-text-centered">
                 <h2 className="section-title">
                   About Dala
                 </h2>
                 <h3 className="section-description">
-                  $DALA is live, in the hands of over 100K emerging market consumers & has been transacted more than 3M times.
+                  $DALA is live, in the hands of over <span className="highlight-h3">100K</span> emerging market consumers & has been transacted more than <span className="highlight-h3">3M times</span>.
                 </h3>
               </header>
             </div>
@@ -31,11 +31,11 @@ class AboutDala extends Component {
           <div className="section-content">
             <div className="columns is-desktop remove-padding">
               <div className="column">
-                <div className="columns is-desktop">
+                <div className="columns">
                   <div className="column float-on-desktop">
                     <p>Dala is a decentralized financial system designed for emerging markets. It's powered by $DALA, an open-source multi-chain crypto asset. Through Dala protocols (Kopa, Soko and Kazi), consumers have access to borderless, low cost, efficient, and unique financial services enabling them to earn, save, borrow, and transact in a new decentralized financial system. The first major contributor to Dala’s open source development and the first application to enable the use of $DALA for transactions and peer-to-peer transfers is Wala, a zero-fee financial services app for emerging markets.</p>
                   </div>
-                  <div className="column is-offset-5-desktop is-7-desktop is-offset-4-widescreen is-8-widescreen">
+                  <div className="column has-text-centered-mobile">
                     <IsometricMap/>
                   </div>
                 </div>

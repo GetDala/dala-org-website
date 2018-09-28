@@ -30,18 +30,20 @@
     }
   }
   .dala-today-hero:before {
-    position: absolute;
-    content: "";
-    display: block;
-    top: 68%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: $color-scampipurple-shade2;
-    opacity: 0.3;
+    @media screen and (min-width: $tablet) {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 68%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $color-scampipurple-shade2;
+      opacity: 0.3;
 
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
   }
   .dala-today-hero:after {
     position: absolute;
@@ -85,45 +87,22 @@
     margin-bottom: 21px;
 
     @media screen and (min-width: $tablet) {
-      height: 156px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      height: 182px;
+      height: 152px;
     }
   }
 
+  .user-icon {
+    height: 65px;
+    fill: $color-scampipurple-tint4;
+    color: $color-scampipurple-tint4;
+  }
   .dala-today-stat {
     @include display;
 
-    font-size: 26px;
-    width: 130px;
-    height: 130px;
-    border: 8px solid white;
-    line-height: 122px;
+    font-size: 42px;
     text-align: center;
     color: white;
     margin: 0 auto 26px auto;
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-
-    @media screen and (min-width: $tablet) {
-      font-size: 37px;
-      width: 156px;
-      height: 156px;
-      border: 13px solid white;
-      line-height: 140px;
-    }
-
-    @media screen and (min-width: $desktop) {
-      font-size: 42px;
-      width: 182px;
-      height: 182px;
-      border: 13px solid white;
-      line-height: 164px;
-    }
   }
   .dala-today-phone-column {
     position: relative;

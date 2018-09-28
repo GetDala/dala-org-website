@@ -8,7 +8,7 @@ class Partnerships extends Component {
       <section id="Partnerships" name="pagePartnerships">
         <div className="container">
           <div className="columns">
-            <div className="column is-8 is-offset-2">
+            <div className="column is-10 is-offset-1">
               <header className="section-header has-text-centered">
                 <h2 className="section-title">
                   Partnerships
