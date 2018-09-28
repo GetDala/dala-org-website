@@ -3,6 +3,14 @@
 #DalaToday {
   padding-right: 36px;
   padding-left: 36px;
+  @media screen and (min-width: $tablet) {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 
   .section-header {
     h3 {
