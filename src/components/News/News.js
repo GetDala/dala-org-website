@@ -69,6 +69,14 @@ class News extends Component {
 
     const articles = [
       {
+        url: 'https://techcrunch.com/2018/10/01/how-a-ugandan-prince-and-an-crypto-startup-are-planning-an-african-revolution/',
+        thumbnail: 'https://techcrunch.com/wp-content/uploads/2018/10/solar2.jpg',
+        title: 'How a Ugandan prince and a crypto startup are planning an African revolution\n',
+        source: 'Techcrunch',
+        date: 'Oct 2018',
+        type: 'article'
+      },
+      {
         url: 'https://bitsonline.com/wala-tricia-martinez-chainx/?utm_source=twitter&utm_medium=social&utm_campaign=SocialWarfare',
         thumbnail: 'https://s3.amazonaws.com/bit-wp-repository/wp-content/uploads/2018/09/18094334/tricia-890x480.png',
         title: 'Wala\'s Tricia Martinez at ChainX: Toward \'Better Than Banking\'',
