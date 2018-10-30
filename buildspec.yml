@@ -1,0 +1,20 @@
+version: 0.2
+
+env:
+  parameter-store:
+    AWS_ACCESS_KEY_ID: SANDBOX_AWS_ACCESS_KEY
+    AWS_SECRET_ACCESS_KEY: SANDBOX_AWS_ACCESS_SECRET
+
+phases:
+  install:
+    commands:
+  pre_build:
+    commands:
+      - echo this build was started by "$CODEBUILD_INITIATOR" pretty darn sweet
+  build:
+    commands:
+      > 
+        yarn
+        yarn deploy
+  post_build:
+    commands:
