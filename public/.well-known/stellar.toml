@@ -1,0 +1,47 @@
+# ----- Dala Stellar Anchor <dala.org> -----
+
+ACCOUNTS=["GDR373A4T5KO77S3ADFLNBR4ME6IRVBI6RAEVUSAM2LFIGGGBPQWVMFM", "GDHF2SPQ3DSOHAPHF5AAIUJDEZDYT5PFUR4IOZKB7ASK6UIG2RCBNHVE"]
+
+[DOCUMENTATION]
+ORG_NAME="Dala Cayman Ltd"
+ORG_DBA="Dala"
+ORG_URL="https://dala.org"
+ORG_LOGO="https://dala.org/dala-logo-150x150.png"
+ORG_DESCRIPTION="A decentralized financial system for emerging markets."
+ORG_PHYSICAL_ADDRESS="Plantation House, P.O. Box 1968, 196 Raleigh Quay, Grand Cayman KY1-1104, Cayman Islands"
+ORG_KEYBASE="getdala"
+ORG_TWITTER="DalaFoundation"
+ORG_GITHUB="GetDala"
+ORG_OFFICIAL_EMAIL="info@dala.org"
+
+[[PRINCIPALS]]
+name="Tricia Martinez"
+email="tricia@dala.org"
+twitter="TriciaTita"
+
+[[PRINCIPALS]]
+name="Samer Saab"
+email="samer@dala.org"
+twitter="Samer_Saab"
+
+[[PRINCIPALS]]
+name="Ross McEwan"
+email="ross@dala.org"
+twitter="ross_mcewan"
+keybase="rossmcewan"
+github="rossmcewan"
+
+[[PRINCIPALS]]
+name="Llew Claasen"
+email="llew@dala.org"
+twitter="LlewClaasen"
+
+[[CURRENCIES]]
+code="DALA"
+issuer="GDR373A4T5KO77S3ADFLNBR4ME6IRVBI6RAEVUSAM2LFIGGGBPQWVMFM"
+display_decimals=7
+name="Dala"
+desc="The Dala Token"
+image="https://dala.org/dala-logo-150x150.png"
+
+# ----- Haere ra! -----
