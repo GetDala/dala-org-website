@@ -46,7 +46,8 @@ class DalaEcosystem extends Component {
                       </div>
                       <div className="column remove-padding">
                         <div className="video-container">
-                          <iframe className="embed" width="100%" height="auto" src="https://www.youtube.com/embed/MobDGCetslM" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+                          <iframe className="embed" src="https://player.vimeo.com/video/285034187" width="100%" height="auto"
+                                  frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                         </div>
                       </div>
                     </div>
